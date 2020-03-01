@@ -6,20 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>GitHub小技巧 | Wangdi&#39;s Blog</title>
+  <title>Git简单使用（2）--远程仓库 | Wangdi&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="查找项目时需要关注的几个点 开源项目名称 简要描述 Read.md star数与fork数 更新日期  通过名称来搜索比如需要名称来搜索 spring boot 有关的开源项目，可以在搜索框输入 in:name spring boot搜索出的内容即为项目名称中包含spring boot的开源项目">
+  <meta name="description" content="本篇主要以远程仓库使用为主。 远程仓库远程仓库并不复杂, 在如今的云计算盛行的世界很容易把远程仓库想象成一个富有魔力的东西, 但实际上它们只是你的仓库在另个一台计算机上的拷贝。你可以通过因特网与这台计算机通信 —— 也就是增加或是获取提交记录。 远程仓库有一些强大的特性：  首先也是最重要的的点, 远程仓库是一个强大的备份。本地仓库也有恢复文件到指定版本的能力, 但所有的信息都是保存在本地的。有了">
 <meta property="og:type" content="article">
-<meta property="og:title" content="GitHub小技巧">
-<meta property="og:url" content="http://yoursite.com/2020/03/01/itHub%E5%B0%8F%E6%8A%80%E5%B7%A7/index.html">
+<meta property="og:title" content="Git简单使用（2）--远程仓库">
+<meta property="og:url" content="http://yoursite.com/2020/03/01/it%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8-2/index.html">
 <meta property="og:site_name" content="Wangdi&#39;s Blog">
-<meta property="og:description" content="查找项目时需要关注的几个点 开源项目名称 简要描述 Read.md star数与fork数 更新日期  通过名称来搜索比如需要名称来搜索 spring boot 有关的开源项目，可以在搜索框输入 in:name spring boot搜索出的内容即为项目名称中包含spring boot的开源项目">
+<meta property="og:description" content="本篇主要以远程仓库使用为主。 远程仓库远程仓库并不复杂, 在如今的云计算盛行的世界很容易把远程仓库想象成一个富有魔力的东西, 但实际上它们只是你的仓库在另个一台计算机上的拷贝。你可以通过因特网与这台计算机通信 —— 也就是增加或是获取提交记录。 远程仓库有一些强大的特性：  首先也是最重要的的点, 远程仓库是一个强大的备份。本地仓库也有恢复文件到指定版本的能力, 但所有的信息都是保存在本地的。有了">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-03-01T06:07:00.000Z">
-<meta property="article:modified_time" content="2020-03-01T12:44:31.647Z">
+<meta property="article:published_time" content="2020-03-01T12:42:00.000Z">
+<meta property="article:modified_time" content="2020-03-01T13:10:28.210Z">
 <meta property="article:author" content="王迪">
-<meta property="article:tag" content="GitHub">
-<meta property="article:tag" content="Tips">
+<meta property="article:tag" content="Git">
 <meta name="twitter:card" content="summary">
   
   
@@ -140,43 +139,74 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-itHub小技巧" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-it简单使用-2" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      GitHub小技巧
+      Git简单使用（2）--远程仓库
     </h1>
   
 
         
-        <a href="/2020/03/01/itHub%E5%B0%8F%E6%8A%80%E5%B7%A7/" class="archive-article-date">
-  	<time datetime="2020-03-01T06:07:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-01</time>
+        <a href="/2020/03/01/it%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8-2/" class="archive-article-date">
+  	<time datetime="2020-03-01T12:42:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-01</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="查找项目时需要关注的几个点"><a href="#查找项目时需要关注的几个点" class="headerlink" title="查找项目时需要关注的几个点"></a>查找项目时需要关注的几个点</h3><ul>
-<li>开源项目名称</li>
-<li>简要描述</li>
-<li>Read.md</li>
-<li>star数与fork数</li>
-<li>更新日期</li>
-</ul>
-<h4 id="通过名称来搜索"><a href="#通过名称来搜索" class="headerlink" title="通过名称来搜索"></a>通过名称来搜索</h4><p>比如需要名称来搜索 spring boot 有关的开源项目，可以在搜索框输入 <code>in:name spring boot</code><br>搜索出的内容即为项目名称中包含spring boot的开源项目</p>
-<a id="more"></a>
+        <p>本篇主要以远程仓库使用为主。</p>
+<h2 id="远程仓库"><a href="#远程仓库" class="headerlink" title="远程仓库"></a>远程仓库</h2><p>远程仓库并不复杂, 在如今的云计算盛行的世界很容易把远程仓库想象成一个富有魔力的东西, 但实际上它们只是你的仓库在另个一台计算机上的拷贝。你可以通过因特网与这台计算机通信 —— 也就是增加或是获取提交记录。</p>
+<p>远程仓库有一些强大的特性：</p>
+<ul>
+<li>首先也是最重要的的点, 远程仓库是一个强大的备份。本地仓库也有恢复文件到指定版本的能力, 但所有的信息都是保存在本地的。有了远程仓库以后，即使丢失了本地所有数据, 你仍可以通过远程仓库拿回你丢失的数据。</li>
+<li>其次, 远程让代码社交化了! 既然你的项目被托管到别的地方了, 你的朋友可以更容易地为你的项目做贡献(或者拉取最新的变更)<a id="more"></a>
 
-<h4 id="通过star数来搜索"><a href="#通过star数来搜索" class="headerlink" title="通过star数来搜索"></a>通过star数来搜索</h4><p>比如在前面搜索的基础上搜索大于2000star数的开源项目 <code>in:name spring boot stars:&gt;2000</code> </p>
-<h4 id="通过fork数来搜索"><a href="#通过fork数来搜索" class="headerlink" title="通过fork数来搜索"></a>通过fork数来搜索</h4><p>同star数，比如搜索fork数大于1000的项目： <code>in name spring boot forks:&gt;1000</code></p>
-<h4 id="在Readme-md中搜索"><a href="#在Readme-md中搜索" class="headerlink" title="在Readme.md中搜索"></a>在Readme.md中搜索</h4><p>Readme.md中包含spring boot的开源项目 <code>in:readme spring boot</code> ，同理，后可跟star或fork限定查找范围</p>
-<h4 id="在描述中搜索"><a href="#在描述中搜索" class="headerlink" title="在描述中搜索"></a>在描述中搜索</h4><p>项目描述中包含sprin boot的开源项目 <code>in:description spring boot</code> </p>
-<h4 id="在语言中限定来搜索"><a href="#在语言中限定来搜索" class="headerlink" title="在语言中限定来搜索"></a>在语言中限定来搜索</h4><p>项目描述中包含spring boot，且用java语言来开发的（这不是废话！）开源项目 <code>in:description spring boot language:java</code> </p>
-<h4 id="通过最后一次更新时间来搜索"><a href="#通过最后一次更新时间来搜索" class="headerlink" title="通过最后一次更新时间来搜索"></a>通过最后一次更新时间来搜索</h4><p>项目描述中包含spring boot，且用java语言来开发的，最后一次更新的时间最早为2020年2月1日的开源项目 <code>in:description spring boot language:java pushed:&gt;2020-2-1</code></p>
-<h3 id="不同分支（版本）进行比较"><a href="#不同分支（版本）进行比较" class="headerlink" title="不同分支（版本）进行比较"></a>不同分支（版本）进行比较</h3><p>在github项目地址后加 /compare ，然后可以对不同分支（版本）进行比较。</p>
+</li>
+</ul>
+<p>我们需要一个配置这种环境的命令, 它就是 git clone。 从技术上来讲，git clone 命令在真实的环境下的作用是在本地创建一个远程仓库的拷贝（比如从 github.com）。</p>
+<h2 id="远程分支"><a href="#远程分支" class="headerlink" title="远程分支"></a>远程分支</h2><p>你可能注意到的第一个事就是在我们的本地仓库多了一个名为 o/master 的分支, 这种类型的分支就叫远程分支。由于远程分支的特性导致其拥有一些特殊属性。</p>
+<p>远程分支反映了远程仓库(在你上次和它通信时)的状态。这会有助于你理解本地的工作与公共工作的差别 —— 这是你与别人分享工作成果前至关重要的一步.</p>
+<p>远程分支有一个特别的属性，在你检出时自动进入分离 HEAD 状态。Git 这么做是出于不能直接在这些分支上进行操作的原因, 你必须在别的地方完成你的工作, （更新了远程分支之后）再用远程分享你的工作成果。</p>
+<h2 id="Git-Fetch"><a href="#Git-Fetch" class="headerlink" title="Git Fetch"></a>Git Fetch</h2><p>Git 远程仓库相当的操作实际可以归纳为两点：向远程仓库传输数据以及从远程仓库获取数据。既然我们能与远程仓库同步，那么就可以分享任何能被 Git 管理的更新（因此可以分享代码、文件、想法、情书等等）。</p>
+<p>那么，我们将如何从远程仓库获取数据？命令就是 git fetch。</p>
+<p>git fetch 完成了仅有的但是很重要的两步:</p>
+<ul>
+<li>从远程仓库下载本地仓库中缺失的提交记录</li>
+<li>更新远程分支指针(如 o/master)</li>
+</ul>
+<p>git fetch 实际上将本地仓库中的远程分支更新成了远程仓库相应分支最新的状态。<br>git fetch 通常通过互联网（使用 http:// 或 git:// 协议) 与远程仓库通信。</p>
+<p>git fetch 并不会改变你本地仓库的状态。它不会更新你的 master 分支，也不会修改你磁盘上的文件。<br>理解这一点很重要，因为许多开发人员误以为执行了 git fetch 以后，他们本地仓库就与远程仓库同步了。它可能已经将进行这一操作所需的所有数据都下载了下来，但是并没有修改你本地的文件。所以, 你可以将 git fetch 的理解为单纯的下载操作。</p>
+<h2 id="Git-Pull"><a href="#Git-Pull" class="headerlink" title="Git Pull"></a>Git Pull</h2><p>既然我们已经知道了如何用 git fetch 获取远程的数据, 现在我们学习如何将这些变化更新到我们的工作当中。其实有很多方法的 —— 当远程分支中有新的提交时，你可以像合并本地分支那样来合并远程分支。也就是说就是你可以执行以下命令:</p>
+<ul>
+<li><code>git cherry-pick o/master</code></li>
+<li><code>git rebase o/master</code></li>
+<li><code>git merge o/master</code></li>
+<li>等等</li>
+</ul>
+<p>实际上，由于先抓取更新再合并到本地分支这个流程很常用，因此 Git 提供了一个专门的命令来完成这两个操作。它就是 git pull。</p>
+<h2 id="Git-Push"><a href="#Git-Push" class="headerlink" title="Git Push"></a>Git Push</h2><p>我如何与大家分享我的成果呢？git push！</p>
+<p>git push 负责将你的变更上传到指定的远程仓库，并在远程仓库上合并你的新提交记录。一旦 git push 完成, 你的朋友们就可以从这个远程仓库下载你分享的成果了！<br>你可以将 git push 想象成发布你成果的命令。</p>
+<p>注意 —— git push 不带任何参数时的行为与 Git 的一个名为 push.default 的配置有关。它的默认值取决于你正使用的 Git 的版本,你的项目中进行推送之前，最好检查一下这个配置。</p>
+<h2 id="推送主分支"><a href="#推送主分支" class="headerlink" title="推送主分支"></a>推送主分支</h2><p>在大型项目中开发人员通常会在（从 master 上分出来的）特性分支上工作，工作完成后只做一次集成。但是有些开发人员只在 master 上做 push、pull —— 这样的话 master 总是最新的，始终与远程分支 (o/master) 保持一致。</p>
+<h2 id="合并远程仓库"><a href="#合并远程仓库" class="headerlink" title="合并远程仓库"></a>合并远程仓库</h2><p> rebase 的优缺点：</p>
+<p>优点: Rebase 使你的提交树变得很干净, 所有的提交都在一条线上</p>
+<p>缺点: Rebase 修改了提交树的历史</p>
+<p>比如, 提交 C1 可以被 rebase 到 C3 之后。<br>这看起来 C1 中的工作是在 C3 之后进行的，<br>但实际上是在 C3 之前。<br>一些开发人员喜欢保留提交历史，因此更偏爱 merge。<br>而其他人可能更喜欢干净的提交树，于是偏爱 rebase。</p>
+<h2 id="远程追踪"><a href="#远程追踪" class="headerlink" title="远程追踪"></a>远程追踪</h2><p>pull 操作时, 提交记录会被先下载到 o/master 上，之后再合并到本地的 master 分支。<br>隐含的合并目标由这个关联确定的。<br>push 操作时, 我们把工作从 master 推到远程仓库中的 master 分支(同时会更新远程分支 o/master) 。<br>这个推送的目的地也是由这种关联确定的！<br>master 和 o/master 的关联关系就是由分支的“remote tracking”属性决定的。<br>master 被设定为跟踪 o/master 。<br>这意味着为 master 分支指定了推送的目的地以及拉取后合并的目标。<br>当你克隆仓库的时候, Git 就自动帮你把这个属性设置好了。</p>
+<p>有两种方法设置这个属性，<br>第一种就是通过远程分支检出一个新的分支，执行:<br>git checkout -b totallyNotMaster o/master<br>就可以创建一个名为 totallyNotMaster 的分支，它跟踪远程分支 o/master。</p>
+<p>另一种方法就是使用：（这个命令更明确！）<br><code>git branch -u o/master foo</code><br>这样 foo 就会跟踪 o/master 了。<br>如果当前就在 foo 分支上, 还可以省略 foo：<br><code>git branch -u o/master</code></p>
+<h2 id="git-push-参数"><a href="#git-push-参数" class="headerlink" title="git push 参数"></a>git push 参数</h2><p>在远程跟踪中，Git通过当前检出分支的属性来确定远程仓库以及要 push 的目的地。<br>这是未指定参数时的行为，我们可以为 push 指定参数，语法是：<br><code>git push remote place</code></p>
+<p><code>git push origin master</code><br>切到本地仓库中的“master”分支，<br>获取所有的提交，<br>再到远程仓库“origin”中找到“master”分支，<br>将远程仓库中没有的提交记录都添加上去，<br>搞定之后告诉我。<br>“place”参数告诉 Git 提交记录来自于 master, 要推送到远程仓库中的 master。<br>它实际就是要同步的两个仓库的位置。</p>
+<p>如果来源和去向分支的名称不同呢？<br>比如你想把本地的 foo 分支推送到远程仓库中的 bar 分支。<br><code>git push origin source:destination</code><br>这个参数实际的值是个 refspec，“refspec” 是一个自造的词，<br>意思是 Git 能识别的位置（比如分支 foo 或者 HEAD~1）<br>如果你要推送到的目的分支不存在，Git 会在远程仓库中根据你提供的名称帮你创建这个分支。</p>
+<h2 id="git-fetch-参数"><a href="#git-fetch-参数" class="headerlink" title="git fetch 参数"></a>git fetch 参数</h2><p><code>git fetch</code>的参数和 <code>git push</code> 极其相似。<br>他们的概念是相同的，只是方向相反罢了（因为现在你是下载，而非上传）</p>
+<h2 id="没有source的source"><a href="#没有source的source" class="headerlink" title="没有source的source"></a>没有source的source</h2><p>如果 <code>push 空 source</code> 到远程仓库会如何呢？它会删除远程仓库中的分支！<br><code>git push origin :foo</code><br>我们通过给 push 传空值 source，成功删除了远程仓库中的 foo 分支。</p>
+<p>如果 <code>fetch 空 source</code>到本地，会在本地创建一个新分支。<br><code>git fetch origin :bar</code></p>
+<h2 id="git-pull-参数"><a href="#git-pull-参数" class="headerlink" title="git pull 参数"></a>git pull 参数</h2><p>同上</p>
 
       
 
@@ -190,11 +220,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">GitHub</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Tips</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Git</a>
         		</li>
       		
 		</ul>
@@ -250,7 +276,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/03/01/itHub%E5%B0%8F%E6%8A%80%E5%B7%A7/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/03/01/it%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8-2/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -264,18 +290,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/03/01/it%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Git简单使用（1）--本地仓库
-        
-      </div>
-    </a>
   
-  
-    <a href="/2020/03/01/edis-1/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Redis相关知识</div>
+    <a href="/2020/03/01/it%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Git简单使用（1）--本地仓库</div>
       <i class="icon-circle-right"></i>
     </a>
   
