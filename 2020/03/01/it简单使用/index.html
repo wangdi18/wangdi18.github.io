@@ -16,7 +16,7 @@
 <meta property="og:description" content="本篇主要以本地仓库使用为主。 提交 git commitGit 仓库中的提交记录保存的是你的目录下所有文件的快照，就像是把整个目录复制，然后再粘贴一样，但比复制粘贴优雅许多！ Git 希望提交记录尽可能地轻量，因此在你每次进行提交时，它并不会盲目地复制整个目录。条件允许的情况下，它会将当前版本与仓库中的上一个版本进行对比，并把所有的差异打包到一起作为一个提交记录。 Git 还保存了提交的历史记录。">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-03-01T11:06:00.000Z">
-<meta property="article:modified_time" content="2020-03-01T12:46:58.107Z">
+<meta property="article:modified_time" content="2020-03-01T13:19:05.129Z">
 <meta property="article:author" content="王迪">
 <meta property="article:tag" content="Git">
 <meta name="twitter:card" content="summary">
@@ -172,10 +172,7 @@
 <h3 id="2-git-rebase"><a href="#2-git-rebase" class="headerlink" title="2.git rebase"></a>2.git rebase</h3><p>Rebase 实际上就是取出一系列的提交记录，“复制”它们，然后在另外一个地方逐个的放下去。</p>
 <p>Rebase 的优势就是可以创造更线性的提交历史，这听上去有些难以理解。如果只允许使用 Rebase 的话，代码库的提交历史将会变得异常清晰。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">git branch bugFix		&#x2F;&#x2F;创建bugFix分支</span><br><span class="line">git checkout  bugFix	&#x2F;&#x2F;切换到bugFix分支</span><br><span class="line">git commit				&#x2F;&#x2F;在bugFix分支进行提交</span><br><span class="line">git checkout master		&#x2F;&#x2F;切换到master</span><br><span class="line">git commit				&#x2F;&#x2F;在master进行提交</span><br><span class="line">git checkout bugFix		&#x2F;&#x2F;切换到bugFix分支</span><br><span class="line">git rebase master		&#x2F;&#x2F;将rebase分支合并到master</span><br></pre></td></tr></table></figure>
-<h2 id="在提交树上移动"><a href="#在提交树上移动" class="headerlink" title="在提交树上移动"></a>在提交树上移动</h2><p>我们首先看一下 “HEAD”。 HEAD 是一个对当前检出记录的符号引用 —— 也就是指向你正在其基础上进行工作的提交记录。</p>
-<p>HEAD 总是指向当前分支上最近一次提交记录。大多数修改提交树的 Git 命令都是从改变 HEAD 的指向开始的。</p>
-<p>HEAD 通常情况下是指向分支名的（如 bugFix）。在你提交时，改变了 bugFix 的状态，这一变化通过 HEAD 变得可见。</p>
-<p> HEAD 随着提交向前移动。<br> 如果想看 HEAD 指向，可以通过 cat .git/HEAD 查看， 如果 HEAD 指向的是一个引用，还可以用 git symbolic-ref HEAD 查看它的指向。</p>
+<h2 id="在提交树上移动"><a href="#在提交树上移动" class="headerlink" title="在提交树上移动"></a>在提交树上移动</h2><p>我们首先看一下 “HEAD”。 HEAD 是一个对当前检出记录的符号引用 —— 也就是指向你正在其基础上进行工作的提交记录。HEAD 总是指向当前分支上最近一次提交记录。大多数修改提交树的 Git 命令都是从改变 HEAD 的指向开始的。HEAD 通常情况下是指向分支名的（如 bugFix）。在你提交时，改变了 bugFix 的状态，这一变化通过 HEAD 变得可见。HEAD 随着提交向前移动。如果想看 HEAD 指向，可以通过 cat .git/HEAD 查看， 如果 HEAD 指向的是一个引用，还可以用 git symbolic-ref HEAD 查看它的指向。</p>
 <h3 id="分离的-HEAD"><a href="#分离的-HEAD" class="headerlink" title="分离的 HEAD"></a>分离的 HEAD</h3><p> 分离的 HEAD 就是让其指向了某个具体的提交记录而不是分支名。（即通过提交记录哈希值来在Git中实现移动）</p>
 <h2 id="相对引用"><a href="#相对引用" class="headerlink" title="相对引用"></a>相对引用</h2><p> 通过指定提交记录哈希值的方式在 Git 中移动不太方便。在实际应用时，你就不得不用 git log 来查查看提交记录的哈希值。</p>
 <p> 通过哈希值指定提交记录很不方便，所以 Git 引入了相对引用。使用相对引用的话，你就可以从一个易于记忆的地方（比如 bugFix 分支或 HEAD）开始计算。</p>
@@ -200,17 +197,14 @@
 <p>如果你想将一些提交复制到当前所在的位置（HEAD）下面的话， cherry-pick 是最直接的方式了。</p>
 <p> <code>git cherry-pick C3 C4 C7</code></p>
 <p> 将C3、C4、C7复制到当前分支下</p>
-<h3 id="2-交互式的-rebase"><a href="#2-交互式的-rebase" class="headerlink" title="2.交互式的 rebase"></a>2.交互式的 rebase</h3><p> 当你知道你所需要的提交记录（并且还知道这些提交记录的哈希值）时, 用 cherry-pick 再好不过了 —— 没有比这更简单的方式了。</p>
-<p> 但是如果你不清楚你想要的提交记录的哈希值呢? 幸好 Git 帮你想到了这一点, 我们可以利用交互式的 rebase —— 如果你想从一系列的提交记录中找到想要的记录, 这就是最好的方法了<br> 交互式 rebase 指的是使用带参数 –interactive 的 rebase 命令, 简写为 -i</p>
-<p> 如果你在命令后增加了这个选项, Git 会打开一个 UI 界面并列出将要被复制到目标分支的备选提交记录，它还会显示每个提交记录的哈希值和提交说明，提交说明有助于你理解这个提交进行了哪些更改。</p>
-<p> 在实际使用时，所谓的 UI 窗口一般会在文本编辑器 —— 如 Vim —— 中打开一个文件。</p>
+<h3 id="2-交互式的-rebase"><a href="#2-交互式的-rebase" class="headerlink" title="2.交互式的 rebase"></a>2.交互式的 rebase</h3><p> 当你知道你所需要的提交记录（并且还知道这些提交记录的哈希值）时, 用 cherry-pick 再好不过了 —— 没有比这更简单的方式了。但是如果你不清楚你想要的提交记录的哈希值呢? 幸好 Git 帮你想到了这一点, 我们可以利用交互式的 rebase —— 如果你想从一系列的提交记录中找到想要的记录, 这就是最好的方法了<br> 交互式 rebase 指的是使用带参数 –interactive 的 rebase 命令, 简写为 -i，如果你在命令后增加了这个选项, Git 会打开一个 UI 界面并列出将要被复制到目标分支的备选提交记录，它还会显示每个提交记录的哈希值和提交说明，提交说明有助于你理解这个提交进行了哪些更改。在实际使用时，所谓的 UI 窗口一般会在文本编辑器 —— 如 Vim —— 中打开一个文件。</p>
 <p>当 rebase UI界面打开时, 你能做3件事:</p>
 <ul>
 <li>调整提交记录的顺序（通过鼠标拖放来完成）</li>
 <li>删除你不想要的提交（通过切换 pick 的状态来完成，关闭就意味着你不想要这个提交记录）</li>
 <li>合并提交。</li>
 </ul>
-<h2 id="本地栈式提交"><a href="#本地栈式提交" class="headerlink" title="本地栈式提交"></a>本地栈式提交</h2><p> 来看一个在开发中经常会遇到的情况：我正在解决某个特别棘手的 Bug，为了便于调试而在代码中添加了一些调试命令并向控制台打印了一些信息。<br> 这些调试和打印语句都在它们各自的提交记录里。最后我终于找到了造成这个 Bug 的根本原因，解决掉以后觉得沾沾自喜！<br> 最后就差把 bugFix 分支里的工作合并回 master 分支了。你可以选择通过 fast-forward 快速合并到 master 分支上，但这样的话 master 分支就会包含我这些调试语句了。你肯定不想这样，应该还有更好的方式……</p>
+<h2 id="本地栈式提交"><a href="#本地栈式提交" class="headerlink" title="本地栈式提交"></a>本地栈式提交</h2><p> 来看一个在开发中经常会遇到的情况：我正在解决某个特别棘手的 Bug，为了便于调试而在代码中添加了一些调试命令并向控制台打印了一些信息。这些调试和打印语句都在它们各自的提交记录里。最后我终于找到了造成这个 Bug 的根本原因，解决掉以后觉得沾沾自喜！最后就差把 bugFix 分支里的工作合并回 master 分支了。你可以选择通过 fast-forward 快速合并到 master 分支上，但这样的话 master 分支就会包含我这些调试语句了。你肯定不想这样，应该还有更好的方式……</p>
 <p> 实际我们只要让 Git 复制解决问题的那一个提交记录就可以了。跟之前我们在“整理提交记录”中学到的一样，我们可以使用<code>git rebase -i</code> 或者<code>git cherry-pick</code>来达到目的。</p>
 <h2 id="提交的技巧1"><a href="#提交的技巧1" class="headerlink" title="提交的技巧1"></a>提交的技巧1</h2><p> 接下来这种情况也是很常见的：你之前在 newImage 分支上进行了一次提交，然后又基于它创建了 caption 分支，然后又提交了一次。</p>
 <p> 此时你想对的某个以前的提交记录进行一些小小的调整。比如设计师想修改一下 newImage 中图片的分辨率，尽管那个提交记录并不是最新的了。</p>

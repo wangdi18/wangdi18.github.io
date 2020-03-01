@@ -16,7 +16,7 @@
 <meta property="og:description" content="本篇主要以远程仓库使用为主。 远程仓库远程仓库并不复杂, 在如今的云计算盛行的世界很容易把远程仓库想象成一个富有魔力的东西, 但实际上它们只是你的仓库在另个一台计算机上的拷贝。你可以通过因特网与这台计算机通信 —— 也就是增加或是获取提交记录。 远程仓库有一些强大的特性：  首先也是最重要的的点, 远程仓库是一个强大的备份。本地仓库也有恢复文件到指定版本的能力, 但所有的信息都是保存在本地的。有了">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-03-01T12:42:00.000Z">
-<meta property="article:modified_time" content="2020-03-01T13:11:59.576Z">
+<meta property="article:modified_time" content="2020-03-01T13:17:29.517Z">
 <meta property="article:author" content="王迪">
 <meta property="article:tag" content="Git">
 <meta name="twitter:card" content="summary">
@@ -179,7 +179,7 @@
 <li>从远程仓库下载本地仓库中缺失的提交记录</li>
 <li>更新远程分支指针(如 o/master)</li>
 </ul>
-<p>git fetch 实际上将本地仓库中的远程分支更新成了远程仓库相应分支最新的状态。<br>git fetch 通常通过互联网（使用 http:// 或 git:// 协议) 与远程仓库通信。</p>
+<p>git fetch 实际上将本地仓库中的远程分支更新成了远程仓库相应分支最新的状态。git fetch 通常通过互联网（使用 http:// 或 git:// 协议) 与远程仓库通信。</p>
 <p>git fetch 并不会改变你本地仓库的状态。它不会更新你的 master 分支，也不会修改你磁盘上的文件。<br>理解这一点很重要，因为许多开发人员误以为执行了 git fetch 以后，他们本地仓库就与远程仓库同步了。它可能已经将进行这一操作所需的所有数据都下载了下来，但是并没有修改你本地的文件。所以, 你可以将 git fetch 的理解为单纯的下载操作。</p>
 <h2 id="Git-Pull"><a href="#Git-Pull" class="headerlink" title="Git Pull"></a>Git Pull</h2><p>既然我们已经知道了如何用 git fetch 获取远程的数据, 现在我们学习如何将这些变化更新到我们的工作当中。其实有很多方法的 —— 当远程分支中有新的提交时，你可以像合并本地分支那样来合并远程分支。也就是说就是你可以执行以下命令:</p>
 <ul>
@@ -196,16 +196,17 @@
 <h2 id="合并远程仓库"><a href="#合并远程仓库" class="headerlink" title="合并远程仓库"></a>合并远程仓库</h2><p> rebase 的优缺点：</p>
 <p>优点: Rebase 使你的提交树变得很干净, 所有的提交都在一条线上</p>
 <p>缺点: Rebase 修改了提交树的历史</p>
-<p>比如, 提交 C1 可以被 rebase 到 C3 之后。<br>这看起来 C1 中的工作是在 C3 之后进行的，<br>但实际上是在 C3 之前。<br>一些开发人员喜欢保留提交历史，因此更偏爱 merge。<br>而其他人可能更喜欢干净的提交树，于是偏爱 rebase。</p>
-<h2 id="远程追踪"><a href="#远程追踪" class="headerlink" title="远程追踪"></a>远程追踪</h2><p>pull 操作时, 提交记录会被先下载到 o/master 上，之后再合并到本地的 master 分支。<br>隐含的合并目标由这个关联确定的。<br>push 操作时, 我们把工作从 master 推到远程仓库中的 master 分支(同时会更新远程分支 o/master) 。<br>这个推送的目的地也是由这种关联确定的！<br>master 和 o/master 的关联关系就是由分支的“remote tracking”属性决定的。<br>master 被设定为跟踪 o/master 。<br>这意味着为 master 分支指定了推送的目的地以及拉取后合并的目标。<br>当你克隆仓库的时候, Git 就自动帮你把这个属性设置好了。</p>
-<p>有两种方法设置这个属性，<br>第一种就是通过远程分支检出一个新的分支，执行:<br>git checkout -b totallyNotMaster o/master<br>就可以创建一个名为 totallyNotMaster 的分支，它跟踪远程分支 o/master。</p>
-<p>另一种方法就是使用：（这个命令更明确！）<br><code>git branch -u o/master foo</code><br>这样 foo 就会跟踪 o/master 了。<br>如果当前就在 foo 分支上, 还可以省略 foo：<br><code>git branch -u o/master</code></p>
-<h2 id="git-push-参数"><a href="#git-push-参数" class="headerlink" title="git push 参数"></a>git push 参数</h2><p>在远程跟踪中，Git通过当前检出分支的属性来确定远程仓库以及要 push 的目的地。<br>这是未指定参数时的行为，我们可以为 push 指定参数，语法是：<br><code>git push remote place</code></p>
-<p><code>git push origin master</code><br>切到本地仓库中的“master”分支，<br>获取所有的提交，<br>再到远程仓库“origin”中找到“master”分支，<br>将远程仓库中没有的提交记录都添加上去，<br>搞定之后告诉我。<br>“place”参数告诉 Git 提交记录来自于 master, 要推送到远程仓库中的 master。<br>它实际就是要同步的两个仓库的位置。</p>
-<p>如果来源和去向分支的名称不同呢？<br>比如你想把本地的 foo 分支推送到远程仓库中的 bar 分支。<br><code>git push origin source:destination</code><br>这个参数实际的值是个 refspec，“refspec” 是一个自造的词，<br>意思是 Git 能识别的位置（比如分支 foo 或者 HEAD~1）<br>如果你要推送到的目的分支不存在，Git 会在远程仓库中根据你提供的名称帮你创建这个分支。</p>
-<h2 id="git-fetch-参数"><a href="#git-fetch-参数" class="headerlink" title="git fetch 参数"></a>git fetch 参数</h2><p><code>git fetch</code>的参数和 <code>git push</code> 极其相似。<br>他们的概念是相同的，只是方向相反罢了（因为现在你是下载，而非上传）</p>
-<h2 id="没有source的source"><a href="#没有source的source" class="headerlink" title="没有source的source"></a>没有source的source</h2><p>如果 <code>push 空 source</code> 到远程仓库会如何呢？它会删除远程仓库中的分支！<br><code>git push origin :foo</code><br>我们通过给 push 传空值 source，成功删除了远程仓库中的 foo 分支。</p>
-<p>如果 <code>fetch 空 source</code>到本地，会在本地创建一个新分支。<br><code>git fetch origin :bar</code></p>
+<p>比如, 提交 C1 可以被 rebase 到 C3 之后。这看起来 C1 中的工作是在 C3 之后进行的，<br>但实际上是在 C3 之前。一些开发人员喜欢保留提交历史，因此更偏爱 merge。而其他人可能更喜欢干净的提交树，于是偏爱 rebase。</p>
+<h2 id="远程追踪"><a href="#远程追踪" class="headerlink" title="远程追踪"></a>远程追踪</h2><p>pull 操作时, 提交记录会被先下载到 o/master 上，之后再合并到本地的 master 分支。隐含的合并目标由这个关联确定的。push 操作时, 我们把工作从 master 推到远程仓库中的 master 分支(同时会更新远程分支 o/master) 。这个推送的目的地也是由这种关联确定的！master 和 o/master 的关联关系就是由分支的“remote tracking”属性决定的。master 被设定为跟踪 o/master 。这意味着为 master 分支指定了推送的目的地以及拉取后合并的目标。当你克隆仓库的时候, Git 就自动帮你把这个属性设置好了。</p>
+<p>有两种方法设置这个属性：</p>
+<p>第一种就是通过远程分支检出一个新的分支，执行:<code>git checkout -b totallyNotMaster o/master</code>就可以创建一个名为 totallyNotMaster 的分支，它跟踪远程分支 o/master。</p>
+<p>另一种方法就是使用：<code>git branch -u o/master foo</code>（这个命令更明确！）这样 foo 就会跟踪 o/master 了。如果当前就在 foo 分支上, 还可以省略 foo：<code>git branch -u o/master</code></p>
+<h2 id="git-push-参数"><a href="#git-push-参数" class="headerlink" title="git push 参数"></a>git push 参数</h2><p>在远程跟踪中，Git通过当前检出分支的属性来确定远程仓库以及要 push 的目的地。这是未指定参数时的行为，我们可以为 push 指定参数，语法是：<code>git push remote place</code></p>
+<p><code>git push origin master</code>切到本地仓库中的“master”分支，获取所有的提交，再到远程仓库“origin”中找到“master”分支，将远程仓库中没有的提交记录都添加上去，搞定之后告诉我。“place”参数告诉 Git 提交记录来自于 master, 要推送到远程仓库中的 master。它实际就是要同步的两个仓库的位置。</p>
+<p>如果来源和去向分支的名称不同呢？比如你想把本地的 foo 分支推送到远程仓库中的 bar 分支。<code>git push origin source:destination</code> 这个参数实际的值是个 refspec，“refspec” 是一个自造的词，意思是 Git 能识别的位置（比如分支 foo 或者 HEAD~1）如果你要推送到的目的分支不存在，Git 会在远程仓库中根据你提供的名称帮你创建这个分支。</p>
+<h2 id="git-fetch-参数"><a href="#git-fetch-参数" class="headerlink" title="git fetch 参数"></a>git fetch 参数</h2><p><code>git fetch</code>的参数和 <code>git push</code> 极其相似。他们的概念是相同的，只是方向相反罢了（因为现在你是下载，而非上传）</p>
+<h2 id="没有source的source"><a href="#没有source的source" class="headerlink" title="没有source的source"></a>没有source的source</h2><p>如果 <code>push 空 source</code> 到远程仓库会如何呢？它会删除远程仓库中的分支！<code>git push origin :foo</code>我们通过给 push 传空值 source，成功删除了远程仓库中的 foo 分支。</p>
+<p>如果 <code>fetch 空 source</code>到本地，会在本地创建一个新分支。<code>git fetch origin :bar</code></p>
 <h2 id="git-pull-参数"><a href="#git-pull-参数" class="headerlink" title="git pull 参数"></a>git pull 参数</h2><p>同上</p>
 <h6 id="推荐学习Git网站：https-learngitbranching-js-org"><a href="#推荐学习Git网站：https-learngitbranching-js-org" class="headerlink" title="推荐学习Git网站：https://learngitbranching.js.org/"></a>推荐学习Git网站：<a href="https://learngitbranching.js.org/" target="_blank" rel="noopener">https://learngitbranching.js.org/</a></h6>
       
