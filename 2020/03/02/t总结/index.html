@@ -6,20 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>IDEA插件 | Wangdi&#39;s Blog</title>
+  <title>Git最常用操作 | Wangdi&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="分享几个IDEA插件 1.Backgroud Image Plus默认IDEA背景要么白，要么黑，使用Background Image Plus插件可以为IDEA设置自定义图片作为背景，而且可以设置透明度。 2.CodeGlanceCodeGlance是一款非常好用的代码地图插件，可以在代码编辑区的右侧生成一个竖向可以拖动的代码缩略图，可以快速定位代码的同时，并提供放大镜功能 3.Translat">
+  <meta name="description" content="一、创建与合并分支1.从master分支创建dev分支并切换到dev分支12git checkout mastergit checkout -b dev 其中，git checkout -b dev 等价于: 12git branch devgit checkout dev  git branch 查看本地当前的分支，分支前面带“*”表示当前分支，剩下的分支表示本地有的分支。git  branch">
 <meta property="og:type" content="article">
-<meta property="og:title" content="IDEA插件">
-<meta property="og:url" content="http://yoursite.com/2020/03/14/EA%E6%8F%92%E4%BB%B6/index.html">
+<meta property="og:title" content="Git最常用操作">
+<meta property="og:url" content="http://yoursite.com/2020/03/02/t%E6%80%BB%E7%BB%93/index.html">
 <meta property="og:site_name" content="Wangdi&#39;s Blog">
-<meta property="og:description" content="分享几个IDEA插件 1.Backgroud Image Plus默认IDEA背景要么白，要么黑，使用Background Image Plus插件可以为IDEA设置自定义图片作为背景，而且可以设置透明度。 2.CodeGlanceCodeGlance是一款非常好用的代码地图插件，可以在代码编辑区的右侧生成一个竖向可以拖动的代码缩略图，可以快速定位代码的同时，并提供放大镜功能 3.Translat">
+<meta property="og:description" content="一、创建与合并分支1.从master分支创建dev分支并切换到dev分支12git checkout mastergit checkout -b dev 其中，git checkout -b dev 等价于: 12git branch devgit checkout dev  git branch 查看本地当前的分支，分支前面带“*”表示当前分支，剩下的分支表示本地有的分支。git  branch">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-03-14T07:46:00.000Z">
-<meta property="article:modified_time" content="2020-03-15T02:29:57.201Z">
+<meta property="article:published_time" content="2020-03-02T12:06:00.000Z">
+<meta property="article:modified_time" content="2020-03-18T09:12:23.640Z">
 <meta property="article:author" content="王迪">
-<meta property="article:tag" content="IDEA">
-<meta property="article:tag" content="插件">
+<meta property="article:tag" content="Git">
 <meta name="twitter:card" content="summary">
   
   
@@ -144,50 +143,97 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-EA插件" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-t总结" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      IDEA插件
+      Git最常用操作
     </h1>
   
 
         
-        <a href="/2020/03/14/EA%E6%8F%92%E4%BB%B6/" class="archive-article-date">
-  	<time datetime="2020-03-14T07:46:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-14</time>
+        <a href="/2020/03/02/t%E6%80%BB%E7%BB%93/" class="archive-article-date">
+  	<time datetime="2020-03-02T12:06:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-02</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>分享几个IDEA插件</p>
-<h2 id="1-Backgroud-Image-Plus"><a href="#1-Backgroud-Image-Plus" class="headerlink" title="1.Backgroud Image Plus"></a>1.Backgroud Image Plus</h2><p>默认IDEA背景要么白，要么黑，使用Background Image Plus插件可以为IDEA设置自定义图片作为背景，而且可以设置透明度。</p>
-<h2 id="2-CodeGlance"><a href="#2-CodeGlance" class="headerlink" title="2.CodeGlance"></a>2.CodeGlance</h2><p>CodeGlance是一款非常好用的代码地图插件，可以在代码编辑区的右侧生成一个竖向可以拖动的代码缩略图，可以快速定位代码的同时，并提供放大镜功能</p>
-<h2 id="3-Translation"><a href="#3-Translation" class="headerlink" title="3.Translation"></a>3.Translation</h2><p>代码中遇到不认识的英文怎么办？</p>
-<p>Translation是一款很好用的翻译插件，可以随时翻译单词、句子甚至一段话。从此不用再额外打开浏览器搜索翻译网站</p>
-<h2 id="4-Rainbow-Brackets"><a href="#4-Rainbow-Brackets" class="headerlink" title="4. Rainbow Brackets"></a>4. Rainbow Brackets</h2><p>当代码非常复杂时，各种俄罗斯套娃的括号简直让人心碎，Rainbow Brackets插件可以对成对括号进行着色，从此复杂代码一眼看穿</p>
+        <h1 id="一、创建与合并分支"><a href="#一、创建与合并分支" class="headerlink" title="一、创建与合并分支"></a>一、创建与合并分支</h1><h6 id="1-从master分支创建dev分支并切换到dev分支"><a href="#1-从master分支创建dev分支并切换到dev分支" class="headerlink" title="1.从master分支创建dev分支并切换到dev分支"></a>1.从master分支创建dev分支并切换到dev分支</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git checkout master</span><br><span class="line">git checkout -b dev</span><br></pre></td></tr></table></figure>
+<p>其中，git checkout -b dev 等价于:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git branch dev</span><br><span class="line">git checkout dev</span><br></pre></td></tr></table></figure>
+
+<p><code>git branch</code> 查看本地当前的分支，分支前面带“*”表示当前分支，剩下的分支表示本地有的分支。<br><code>git  branch -a</code> 查看远程全部的分支，白色的表示本地有的，红色的表示本地没有，仅在远程存在。</p>
+<h6 id="2-修改代码、提交代码（当前的操作是在dev分支上进行）"><a href="#2-修改代码、提交代码（当前的操作是在dev分支上进行）" class="headerlink" title="2.修改代码、提交代码（当前的操作是在dev分支上进行）"></a>2.修改代码、提交代码（当前的操作是在dev分支上进行）</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git add a.html</span><br><span class="line">git commit -m &quot;commit a.html&quot;</span><br></pre></td></tr></table></figure>
+<h6 id="3-分支合并-将dev合并到master"><a href="#3-分支合并-将dev合并到master" class="headerlink" title="3.分支合并(将dev合并到master)"></a>3.分支合并(将dev合并到master)</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git checkout master</span><br><span class="line">git merge dev</span><br></pre></td></tr></table></figure>
 <a id="more"></a>
+<h6 id="4-合并完成后，删除dev分支-删除dev分支时，注意我们当前所在的分支不能是dev分支"><a href="#4-合并完成后，删除dev分支-删除dev分支时，注意我们当前所在的分支不能是dev分支" class="headerlink" title="4.合并完成后，删除dev分支(删除dev分支时，注意我们当前所在的分支不能是dev分支)"></a>4.合并完成后，删除dev分支(删除dev分支时，注意我们当前所在的分支不能是dev分支)</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch -d dev</span><br></pre></td></tr></table></figure>
+<h6 id="5-删除后，查看分支-此时看不到dev分支了"><a href="#5-删除后，查看分支-此时看不到dev分支了" class="headerlink" title="5.删除后，查看分支(此时看不到dev分支了)"></a>5.删除后，查看分支(此时看不到dev分支了)</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch</span><br></pre></td></tr></table></figure>
 
-<h2 id="5-Grep-Console"><a href="#5-Grep-Console" class="headerlink" title="5. Grep Console"></a>5. Grep Console</h2><p>默认情况下，IDEA控制台在打印日志时都是一种颜色到底，比如各种info、warn 和 error 等类型的日志信息交织在一起，不好分辨。Grep Console插件则可以帮助我们自定义设置用不同的颜色标识不同的日志，便于查看。</p>
-<h2 id="6-Statistic"><a href="#6-Statistic" class="headerlink" title="6. Statistic"></a>6. Statistic</h2><p>你知道你项目有多少行代码吗？有多少空行？有多少注释行？</p>
-<p>Statistic插件可以做项目全局代码统计</p>
-<h2 id="7-RestfulToolkit"><a href="#7-RestfulToolkit" class="headerlink" title="7. RestfulToolkit"></a>7. RestfulToolkit</h2><p>你知道项目里写了多少个URL接口吗？如何快速定位某个URL接口对应的Controller代码？如何快速测试你的Controller接口？</p>
-<p>RestfulToolkit是一个可以解决上述问题的，非常方便的IDEA集成插件。</p>
-<h2 id="8-GsonFormat"><a href="#8-GsonFormat" class="headerlink" title="8. GsonFormat"></a>8. GsonFormat</h2><p>给你一段Json格式数据，除了手写之外，如何快速生成一个和该Json数据对应的Java对象？</p>
-<p>比如一段Json格式数据如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	&quot;status&quot;:0,</span><br><span class="line">   &quot;msg&quot;:&quot;操作成功&quot;,</span><br><span class="line">   &quot;data&quot;:1</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>GsonFromat则是一个Json格式数据-&gt;对象的快速代码自动生成插件。</p>
-<h2 id="9-MyBatis-Log-Plugin"><a href="#9-MyBatis-Log-Plugin" class="headerlink" title="9. MyBatis Log Plugin"></a>9. MyBatis Log Plugin</h2><p>Mybatis的xml文件中的SQL语句都是拼装起来的，但是比如我们在调试的时候想把某个请求对应的后台具体SQL查询语句单独拿出来测试或者验证，该怎么办？</p>
-<p>Mybatis Log Plugin插件则可以完美的解决这个问题。</p>
-<h2 id="10-Free-Mybatis-plugin"><a href="#10-Free-Mybatis-plugin" class="headerlink" title="10. Free Mybatis plugin"></a>10. Free Mybatis plugin</h2><p>除了全局搜索以外，如何方便的在Mybatis的mapper Java接口方法和mapper xml文件之间来回切换？可以使用Free Mybatis plugin插件</p>
-<h2 id="插件下载地址"><a href="#插件下载地址" class="headerlink" title="插件下载地址"></a>插件下载地址</h2><p>国内镜像在IDEA插件市场经常打不开，或者下载速度很慢，现将下载好的插件分享：</p>
-<p> <a href="https://pan.baidu.com/s/1hzD3KW0nXYyzn9m9qW4NkA" target="_blank" rel="noopener">插件网盘下载</a>，提取码：hejs ，永久有效。</p>
-<p> 转载自羊哥（CodeSheep）</p>
+<h6 id="6-总结-：工作中经常从master创建新的分支，具体操作如下"><a href="#6-总结-：工作中经常从master创建新的分支，具体操作如下" class="headerlink" title="6.总结 ：工作中经常从master创建新的分支，具体操作如下:"></a>6.总结 ：工作中经常从master创建新的分支，具体操作如下:</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">master创建新分支：</span><br><span class="line"></span><br><span class="line">git checkout master</span><br><span class="line"></span><br><span class="line">git checkout -b  issues1234  &#x2F;&#x2F; 从master分支创建issues1234分支</span><br><span class="line"></span><br><span class="line">git push origin issues1234</span><br><span class="line"></span><br><span class="line">git add ..</span><br><span class="line"></span><br><span class="line">git commit -m &quot;***&quot;</span><br><span class="line"></span><br><span class="line">git push origin issues1234</span><br></pre></td></tr></table></figure>
+<p>注意：将本地分支branch1推到远端的branch2操作步骤：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin branch1:branch2</span><br></pre></td></tr></table></figure>
 
+<h6 id="7-删除分支："><a href="#7-删除分支：" class="headerlink" title="7.删除分支："></a>7.删除分支：</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git branch -D   issues1234  &#x2F;&#x2F; 本地强制删除分支issues1234</span><br><span class="line">git push origin  :issues1234  &#x2F;&#x2F; 推到远程</span><br></pre></td></tr></table></figure>
+<h1 id="二、解决冲突"><a href="#二、解决冲突" class="headerlink" title="二、解决冲突"></a>二、解决冲突</h1><h6 id="1-发生冲突的文件"><a href="#1-发生冲突的文件" class="headerlink" title="1.发生冲突的文件"></a>1.发生冲突的文件</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</span><br><span class="line">Creating a new branch is quick &amp; simple.</span><br><span class="line">&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;</span><br><span class="line">Creating a new branch is quick AND simple.</span><br><span class="line">&gt;&gt;&gt;&gt;&gt;&gt;&gt; feature1</span><br></pre></td></tr></table></figure>
+<p>其中，git使用 <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;，=======，&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code>标记文件中自己和别人产生冲突的部分。</p>
+<p>在 <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;，=======</code>之间为自己的代码；<code>=======，&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code>之间为别人的代码。</p>
+<p>如果保留自己的代码，将别人的代码删掉即可。</p>
+<h6 id="2-冲突解决后提交"><a href="#2-冲突解决后提交" class="headerlink" title="2.冲突解决后提交"></a>2.冲突解决后提交</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">git status</span><br><span class="line"></span><br><span class="line">git add ***</span><br><span class="line"></span><br><span class="line">git commit -m &quot;fix conflict&quot;</span><br><span class="line"></span><br><span class="line">git push origin 分支名</span><br></pre></td></tr></table></figure>
+<h1 id="三、Bug分支"><a href="#三、Bug分支" class="headerlink" title="三、Bug分支"></a>三、Bug分支</h1><h6 id="1-储藏更改-将当前更改的代码储藏起来，等以后恢复使用"><a href="#1-储藏更改-将当前更改的代码储藏起来，等以后恢复使用" class="headerlink" title="1.储藏更改:将当前更改的代码储藏起来，等以后恢复使用"></a>1.储藏更改:将当前更改的代码储藏起来，等以后恢复使用</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git stash</span><br></pre></td></tr></table></figure>
+
+<h6 id="2-恢复储藏的代码"><a href="#2-恢复储藏的代码" class="headerlink" title="2.恢复储藏的代码"></a>2.恢复储藏的代码</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git stash pop &#x2F;&#x2F; 恢复的同时把stash内容删掉</span><br></pre></td></tr></table></figure>
+
+<h6 id="3-将stash空间清空"><a href="#3-将stash空间清空" class="headerlink" title="3.将stash空间清空"></a>3.将stash空间清空</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git stash clear</span><br></pre></td></tr></table></figure>
+
+<h6 id="4-git-stash-pop-和-git-stash-apply-区别"><a href="#4-git-stash-pop-和-git-stash-apply-区别" class="headerlink" title="4.git stash pop 和 git stash apply 区别"></a>4.git stash pop 和 git stash apply 区别</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">原来git stash pop stash@&#123;id&#125;命令会在执行后将对应的stash id 从stash list</span><br><span class="line">里删除，而git stash apply stash@&#123;id&#125;命令则会继续保存stash id。</span><br></pre></td></tr></table></figure>
+<h1 id="四、版本回退"><a href="#四、版本回退" class="headerlink" title="四、版本回退"></a>四、版本回退</h1><h6 id="1、回退至上一个版本"><a href="#1、回退至上一个版本" class="headerlink" title="1、回退至上一个版本"></a>1、回退至上一个版本</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git reset --hard HEAD</span><br></pre></td></tr></table></figure>
+<h6 id="2、回退至指定版本"><a href="#2、回退至指定版本" class="headerlink" title="2、回退至指定版本"></a>2、回退至指定版本</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git reset --hard  版本号</span><br></pre></td></tr></table></figure>
+<h6 id="3、查看以往版本号-本地的commit"><a href="#3、查看以往版本号-本地的commit" class="headerlink" title="3、查看以往版本号(本地的commit)"></a>3、查看以往版本号(本地的commit)</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git reflog</span><br></pre></td></tr></table></figure>
+<h6 id="4、查看各版本号及信息-所有的commit：本地commit-其他同事的commit"><a href="#4、查看各版本号及信息-所有的commit：本地commit-其他同事的commit" class="headerlink" title="4、查看各版本号及信息(所有的commit：本地commit + 其他同事的commit)"></a>4、查看各版本号及信息(所有的commit：本地commit + 其他同事的commit)</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git log</span><br></pre></td></tr></table></figure>
+<h1 id="五、撤销修改"><a href="#五、撤销修改" class="headerlink" title="五、撤销修改"></a>五、撤销修改</h1><h6 id="1、撤销修改"><a href="#1、撤销修改" class="headerlink" title="1、撤销修改"></a>1、撤销修改</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git  checkout -- a.html</span><br></pre></td></tr></table></figure>
+<p>分两种情况分析：</p>
+<ol>
+<li>还没有执行 <code>git add</code> 操作，执行上面的操作后，会恢复到和版本库中一模一样的版本状态。</li>
+<li>执行了<code>git add</code> ，还没执行 <code>git commit</code> ,再执行上面的操作后，会恢复到<code>git add</code>结束后的状态</li>
+</ol>
+<p>注：一旦执行了<code>git commit -m &quot;*&quot;</code>，就不能再使用上面的命令回退。</p>
+<h6 id="2、撤销新建文件"><a href="#2、撤销新建文件" class="headerlink" title="2、撤销新建文件"></a>2、撤销新建文件</h6><p>比如新建一个aa.html页面，并未执行git add ,即没有被git追踪，此时如果你想撤销新建动作，可执行：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clean -f ..&#x2F;aa.html</span><br></pre></td></tr></table></figure>
+<h6 id="3、撤销新建文件夹"><a href="#3、撤销新建文件夹" class="headerlink" title="3、撤销新建文件夹"></a>3、撤销新建文件夹</h6><p>比如新建一个文件夹”demo”，并未执行git add ,即没有被git追踪，此时如果你想撤销新建动作，可执行：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clean -df .&#x2F;demo</span><br></pre></td></tr></table></figure>
+
+<h1 id="六、对已push版本进行回退"><a href="#六、对已push版本进行回退" class="headerlink" title="六、对已push版本进行回退"></a>六、对已push版本进行回退</h1><h6 id="1、第一步："><a href="#1、第一步：" class="headerlink" title="1、第一步："></a>1、第一步：</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git reset --hard 版本号 		&#x2F;&#x2F; 本地回退到指定的版本</span><br></pre></td></tr></table></figure>
+<h6 id="2、第二步："><a href="#2、第二步：" class="headerlink" title="2、第二步："></a>2、第二步：</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push  -f origin dev    &#x2F;&#x2F;将远程的也回退到指定版本</span><br></pre></td></tr></table></figure>
+
+<h1 id="七、本地同步远程删除的分支"><a href="#七、本地同步远程删除的分支" class="headerlink" title="七、本地同步远程删除的分支"></a>七、本地同步远程删除的分支</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git fetch origin -p  &#x2F;&#x2F; 用来清除已经没有远程信息的分支，这样git branch -a 就不会拉取远程已经删除的分支了</span><br></pre></td></tr></table></figure>
+<h1 id="八、删掉未与远程分支对应的本地分支"><a href="#八、删掉未与远程分支对应的本地分支" class="headerlink" title="八、删掉未与远程分支对应的本地分支"></a>八、删掉未与远程分支对应的本地分支</h1><p>从githab上看不到的分支在本地可以通过git branch -a 查到，删掉没有与远程分支对应的本地分支：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git fetch -p</span><br></pre></td></tr></table></figure>
+<h1 id="九、查看远程库与本地分支的信息"><a href="#九、查看远程库与本地分支的信息" class="headerlink" title="九、查看远程库与本地分支的信息"></a>九、查看远程库与本地分支的信息</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote show origin</span><br></pre></td></tr></table></figure>
+
+<h1 id="十、标签管理"><a href="#十、标签管理" class="headerlink" title="十、标签管理"></a>十、标签管理</h1><h6 id="1、给当前分支最新commit打标签"><a href="#1、给当前分支最新commit打标签" class="headerlink" title="1、给当前分支最新commit打标签"></a>1、给当前分支最新commit打标签</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git tag v1.0.0</span><br></pre></td></tr></table></figure>
+<h6 id="2、比如现在周五，要给周一某个commit打标签，应执行以下步骤："><a href="#2、比如现在周五，要给周一某个commit打标签，应执行以下步骤：" class="headerlink" title="2、比如现在周五，要给周一某个commit打标签，应执行以下步骤："></a>2、比如现在周五，要给周一某个commit打标签，应执行以下步骤：</h6><p>（1）、查看log日志，找到相应的commit版本号</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git log --pretty&#x3D;oneline --abbrev-commit</span><br><span class="line">&#x2F;&#x2F; 显示如下commit，比如我想在 &quot;34372b05&quot;这个commit打标签</span><br><span class="line">44d2e20b fix bug</span><br><span class="line">34372b05 fix bug</span><br><span class="line">29554931 fix bug</span><br></pre></td></tr></table></figure>
+<p>（2）、给指定的commit打标签</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git tag v1.0.0 34372b05</span><br></pre></td></tr></table></figure>
+<p>（3）、创建的标签只存在本地，推至远程</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin v1.0.0</span><br></pre></td></tr></table></figure>
+<p>（4）、一次性推送未推至远程的本地标签</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin --tags</span><br></pre></td></tr></table></figure>
+<p>（5）、查询所有标签</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git tag</span><br></pre></td></tr></table></figure>
+<p>（6）、查询标签详细信息</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git show v1.0.0</span><br></pre></td></tr></table></figure>
+
+<p>（7）、删除本地标签</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git tag -d v1.0.0</span><br></pre></td></tr></table></figure>
+<p>（8）、删除远程标签</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 先从本地删除</span><br><span class="line">git tag -d v1.0.0</span><br><span class="line">&#x2F;&#x2F; 然后从远程删除</span><br><span class="line">git push origin :refs&#x2F;tags&#x2F;v1.0.0</span><br><span class="line">&#x2F;&#x2F; 最后可以在githab上查看是否真正的删除了标签</span><br></pre></td></tr></table></figure>
+<h6 id="3、创建带有说明的标签，用-a指定标签名，-m指定说明文字"><a href="#3、创建带有说明的标签，用-a指定标签名，-m指定说明文字" class="headerlink" title="3、创建带有说明的标签，用-a指定标签名，-m指定说明文字"></a>3、创建带有说明的标签，用-a指定标签名，-m指定说明文字</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; git  tag  -a  版本号  -m  说明信息  commit版本号</span><br><span class="line">git tag -a v1.0.0 -m &quot;version 1.0.0 released&quot; 34372b05(commit版本号)</span><br><span class="line">&#x2F;&#x2F; 查看标签详细信息</span><br><span class="line">git show v1.0.0</span><br></pre></td></tr></table></figure>
       
 
       
@@ -200,11 +246,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">IDEA</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">插件</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Git</a>
         		</li>
       		
 		</ul>
@@ -260,7 +302,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/03/14/EA%E6%8F%92%E4%BB%B6/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/03/02/t%E6%80%BB%E7%BB%93/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -274,18 +316,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/03/14/%E6%B8%B8%E6%88%8F%E8%AE%B0%E5%BD%95%E8%B4%B4%EF%BC%88%E5%9B%BE%E7%89%87%E4%B8%8A%E4%BC%A0%E6%B5%8B%E8%AF%95%EF%BC%89/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2020/03/09/ava-%E6%B3%A8%E8%A7%A3/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          游戏记录贴（图片上传测试）
+          Java--注解
         
       </div>
     </a>
   
   
-    <a href="/2020/03/14/sta%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E5%88%B6%E4%BD%9CDocker%E9%95%9C%E5%83%8F/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Siesta安装、优化安装以及配置Docker镜像</div>
+    <a href="/2020/03/01/it%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8-2/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Git简单使用（2）--远程仓库</div>
       <i class="icon-circle-right"></i>
     </a>
   
