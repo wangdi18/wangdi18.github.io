@@ -142,6 +142,98 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-BC" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/03/21/BC/">JDBC&amp;&amp;JDBCTemplate</a>
+    </h1>
+  
+
+        
+        <a href="/2020/03/21/BC/" class="archive-article-date">
+  	<time datetime="2020-03-21T11:49:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-21</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>JDBC：Java DataBase Connectivity ，Java数据库连接（Java语言操作数据库）</p>
+<p>官方（sun公司）定义的一套所有关系型数据库的规则，即接口。各个数据库厂商去实现这套接口，提供数据库驱动jar包。我们可以使用这套接口（JDBC）编程，真正执行的代码是驱动jar包中的实现类。</p>
+<h2 id="使用步骤"><a href="#使用步骤" class="headerlink" title="使用步骤"></a>使用步骤</h2><ol>
+<li>导入驱动jar包 mysql-connector-java-5.1.37-bin.jar<br> &nbsp;&nbsp;&nbsp;a.     复制 mysql-connector-java-5.1.37-bin.jar到项目libs目录下（方便项目管理）<br>  &nbsp;&nbsp;&nbsp;b.     项目右键——&gt;Add as Library </li>
+<li>注册驱动</li>
+<li>获取数据库的连接对象Connection</li>
+<li>定义sql</li>
+<li>获取执行sql语句的对象Statement</li>
+<li>执行sql，接收返回结果</li>
+<li>处理结果</li>
+<li>释放资源<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;注册驱动</span><br><span class="line">Class.forName(&quot;com.mysql.jdbc.Driver&quot;);	</span><br><span class="line">&#x2F;&#x2F;获取数据库连接对象</span><br><span class="line">Connection conn &#x3D; DriverManager.getConnection(&quot;jdbc:mysql:&#x2F;&#x2F;localhost:3306&#x2F;db3&quot;,&quot;root&quot;,&quot;xxx&quot;);</span><br><span class="line">&#x2F;&#x2F;定义sql语句</span><br><span class="line">String sql &#x3D; &quot;update salarygrade set losalary &#x3D; 8000 where grade &#x3D; 1&quot;;</span><br><span class="line">&#x2F;&#x2F;获取sql的对象Statement</span><br><span class="line">Statement stmt &#x3D;  conn.createStatement();</span><br><span class="line">&#x2F;&#x2F;执行sql</span><br><span class="line">int count &#x3D; stmt.executeUpdate(sql);</span><br><span class="line">&#x2F;&#x2F;处理结果      </span><br><span class="line">System.out.println(count);</span><br><span class="line">&#x2F;&#x2F;释放资源      </span><br><span class="line">stmt.close();</span><br><span class="line">conn.close();</span><br></pre></td></tr></table></figure></li></ol>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Mysql</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">JDBC</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">JDBCTemplate</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/03/21/BC/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-L——事务、约束" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -1006,83 +1098,6 @@
 
 
   
-    <article id="post-it简单使用" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/03/01/it%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/">Git简单使用（1）--本地仓库</a>
-    </h1>
-  
-
-        
-        <a href="/2020/03/01/it%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/" class="archive-article-date">
-  	<time datetime="2020-03-01T11:06:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-01</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>本篇主要以本地仓库使用为主。</p>
-<h2 id="提交-git-commit"><a href="#提交-git-commit" class="headerlink" title="提交 git commit"></a>提交 git commit</h2><p>Git 仓库中的提交记录保存的是你的目录下所有文件的快照，就像是把整个目录复制，然后再粘贴一样，但比复制粘贴优雅许多！</p>
-<p>Git 希望提交记录尽可能地轻量，因此在你每次进行提交时，它并不会盲目地复制整个目录。条件允许的情况下，它会将当前版本与仓库中的上一个版本进行对比，并把所有的差异打包到一起作为一个提交记录。</p>
-<p>Git 还保存了提交的历史记录。这也是为什么大多数提交记录的上面都有父节点的原因。</p>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Git</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/03/01/it%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
       <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &amp;raquo;</a>
@@ -1232,10 +1247,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">基础</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">约束</a>
               </li>
              
@@ -1249,6 +1260,22 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">事务隔离级别</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">基础</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Mysql</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">JDBC</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">JDBCTemplate</a>
               </li>
             
             <div class="clearfix"></div>
