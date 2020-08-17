@@ -6,15 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2020 | Wangdi&#39;s Blog</title>
+  <title>LeetCode刷题笔记——动态规划 | Wangdi&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="本科毕业于电子科技大学，目前兰州大学研究生在读">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Wangdi&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/archives/2020/index.html">
+  <meta name="description" content="动态规划&#x3D;&#x3D;动态规划问题的一般形式是求最值。&#x3D;&#x3D; 比如求最长递增子序列，最小编辑距离。动态规划的核心问题是穷举。动态规划的穷举有顶啊特别，因为这类问题存在“重叠子问题”，如果暴力穷举的话效率回及其低下，所以需要“备忘录”或者“DP table”来优化穷举过程，通过子问题的最值得到原问题的最值，避免不必要的计算。&#x3D;&#x3D;动态规划的核心是列出状态转移方程&#x3D;&#x3D;。 状态转移方程的思维框架： ​    明确&amp;l">
+<meta property="og:type" content="article">
+<meta property="og:title" content="LeetCode刷题笔记——动态规划">
+<meta property="og:url" content="http://yoursite.com/2020/08/17/LeetCode%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/index.html">
 <meta property="og:site_name" content="Wangdi&#39;s Blog">
-<meta property="og:description" content="本科毕业于电子科技大学，目前兰州大学研究生在读">
+<meta property="og:description" content="动态规划&#x3D;&#x3D;动态规划问题的一般形式是求最值。&#x3D;&#x3D; 比如求最长递增子序列，最小编辑距离。动态规划的核心问题是穷举。动态规划的穷举有顶啊特别，因为这类问题存在“重叠子问题”，如果暴力穷举的话效率回及其低下，所以需要“备忘录”或者“DP table”来优化穷举过程，通过子问题的最值得到原问题的最值，避免不必要的计算。&#x3D;&#x3D;动态规划的核心是列出状态转移方程&#x3D;&#x3D;。 状态转移方程的思维框架： ​    明确&amp;l">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-08-17T02:59:53.914Z">
+<meta property="article:modified_time" content="2020-08-17T03:02:30.230Z">
 <meta property="article:author" content="王迪">
 <meta name="twitter:card" content="summary">
   
@@ -140,375 +142,416 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-LeetCode刷题笔记——动态规划" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/08/17/LeetCode%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97(BFS)/" class="archive-article-date">
-  	<time datetime="2020-08-17T03:03:23.727Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-17</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/08/17/LeetCode%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97(BFS)/">LeetCode刷题笔记——栈和队列(BFS)</a>
+    <h1 class="article-title" itemprop="name">
+      LeetCode刷题笔记——动态规划
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/08/17/LeetCode%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E5%9B%9E%E6%BA%AF%E7%AE%97%E6%B3%95/" class="archive-article-date">
-  	<time datetime="2020-08-17T02:59:53.951Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-17</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/08/17/LeetCode%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E5%9B%9E%E6%BA%AF%E7%AE%97%E6%B3%95/">LeetCode刷题笔记——回溯算法</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/08/17/LeetCode%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/" class="archive-article-date">
+        
+        <a href="/2020/08/17/LeetCode%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/" class="archive-article-date">
   	<time datetime="2020-08-17T02:59:53.914Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-17</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/08/17/LeetCode%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/">LeetCode刷题笔记——动态规划</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="动态规划"><a href="#动态规划" class="headerlink" title="动态规划"></a>动态规划</h1><p>==动态规划问题的一般形式是求最值。== 比如求最长递增子序列，最小编辑距离。<strong>动态规划的核心问题是穷举</strong>。动态规划的穷举有顶啊特别，因为这类问题存在“重叠子问题”，如果暴力穷举的话效率回及其低下，所以需要“备忘录”或者“DP table”来优化穷举过程，通过子问题的最值得到原问题的最值，避免不必要的计算。==动态规划的核心是列出状态转移方程==。</p>
+<p>状态转移方程的思维框架：</p>
+<p>​    明确&lt;状态&gt;  —-&gt;  定义dp数组/函数的含义  —-&gt;   明确&lt;选择&gt;  —–&gt;   明确base case</p>
+<p>例如：斐波那契数（重叠子问题，但是严格来说并不是动态规划问题，这里只用来距离如何列出状态方程）</p>
+<p>​    常见的递归写法：</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> fib(<span class="keyword">int</span> N)&#123;</span><br><span class="line">	<span class="keyword">if</span>(N == <span class="number">1</span> || N == <span class="number">2</span>)</span><br><span class="line">		<span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">return</span> fib(N - <span class="number">1</span>) + fib(N - <span class="number">2</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-        <div class="article-info info-on-right">
-          
-          
+<p>​    带备忘录的递归解法：<br>​        递归写法耗时的原因是重复计算，那么我们可以制造一个&lt;备忘录&gt;，每次算出某个子问题的答案后别急着返回，而是先记到&lt;备忘录&gt;中再返回；每次遇到一个子问题先去&lt;备忘录&gt;里查找，如果发现之前已经解决过这个问题，直接把答案拿出来用。</p>
+<p>​        一般使用一个数组充当这个&lt;备忘录&gt;，当然，也可以使用哈希表，思想是一样的。这里思想是自顶向下。</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> fib(<span class="keyword">int</span> N)&#123;</span><br><span class="line">    <span class="keyword">if</span>(N &lt; <span class="number">1</span>)</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    vector&lt;<span class="keyword">int</span>&gt; memo(N+<span class="number">1</span>,<span class="number">0</span>);	<span class="comment">//备忘录全部初始化为0</span></span><br><span class="line">    <span class="keyword">return</span> helper(memo,N);		<span class="comment">//初始化最简情况</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">int</span> helper(vector&lt;<span class="keyword">int</span>&gt;&amp; memo , <span class="keyword">int</span> n)&#123;</span><br><span class="line">    <span class="keyword">if</span>(n == <span class="number">1</span> || n == <span class="number">2</span>)		<span class="comment">//base case</span></span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">if</span>(memo[n] != <span class="number">0</span>)			<span class="comment">//备忘录中有子问题</span></span><br><span class="line">        <span class="keyword">return</span> memo[n];</span><br><span class="line">    memo[n] = helper(memo , n<span class="number">-1</span>) + helper(memo , n<span class="number">-2</span>);</span><br><span class="line">    <span class="keyword">return</span> memo[n];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
+<a id="more"></a>    
+
+<p>dp数组的迭代解法：<br>​        有了上述的备忘录，我们可以把这个备忘录独立出来成为一张表，就叫做DP table，在这张表上完成自底向上的推算。</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> fib(<span class="keyword">int</span> N)&#123;</span><br><span class="line">    vector&lt;<span class="keyword">int</span>&gt; dp(N + <span class="number">1</span> , <span class="number">0</span>);		<span class="comment">//从下标1开始，下标0并未使用，所以长度为N + 1</span></span><br><span class="line">    dp[<span class="number">1</span>] = dp[<span class="number">2</span>] = <span class="number">1</span>;				<span class="comment">//base case </span></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">3</span>; i &lt;= N ; i++)</span><br><span class="line">    dp[i] = dp[i - <span class="number">1</span>] + dp[i - <span class="number">2</span>];</span><br><span class="line">    <span class="keyword">return</span> dp[N];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>​    这里，状态方程为：<br>$$<br>f(n)=<br>    \begin{cases}<br>        1, &amp; \text{n = 1,2}\<br>        f(n-1) +f(n-2),&amp; \text{n &gt; 2}<br>    \end{cases}<br>$$<br>​    将 f(n) 想做一个状态 n ，这个状态 n 是由状态 n-1 和状态 n-2 相加转移而来，这就叫状态转移。</p>
+<h3 id="最优子结构详解"><a href="#最优子结构详解" class="headerlink" title="最优子结构详解"></a>最优子结构详解</h3><p>最优子结构是某些问题的一种特定性质，并不是动态规划问题专有的。（==想满足最优子结构，子问题之间必须相互独立==）但反过来，最优子结构作为动态规划问题的必要条件，一定是让你求最值。找最优子结构的过程，其实就是证明状态转移方程正确性的过程，方程符合最优子结构就可以写暴力解，写出暴力解就可以看出有没有重叠子问题，有则优化，无则ok。</p>
+<h3 id="dp数组的遍历方向"><a href="#dp数组的遍历方向" class="headerlink" title="dp数组的遍历方向"></a>dp数组的遍历方向</h3><p>我们做动态规划问题时，肯定会对dp数组的遍历顺序头疼。拿二维dp数组举例，有时我们是正向遍历，有时我们反向遍历，有时我们斜向遍历，甚至更让人迷惑的是，有时候发现正向反向遍历都可以得到正确答案，比如股票团灭问题。如果仔细观察，其中只要把握两点原因即可：</p>
+<ol>
+<li>遍历的过程中，所需的状态必须是已经计算出来的；</li>
+<li>遍历的终点必须是存储结果的那个位置。</li>
+</ol>
+<p>比如编辑距离这种经典的问题，我们通过对dp数组的定义，确定了base case是<code>dp[...][0]</code>和<code>dp[0][...]</code>，最终答案是<code>dp[m][n]</code>；而且我们通过状态转移方程知道<code>dp[i][j]</code> 需要从<code>dp[i-1][j],dp[i][j-1],dp[i-1][j-1]</code>转移而来，此时我们肯定是正向遍历。</p>
+<p>再例如回文子序列问题，我们通过对dp数组的定义，确定了base case处在中间的对角线，<code>dp[i][j]</code>需要从<code>dp[i+1][j],dp[i][j-1],dp[i+1][j-1]</code>转移而来，最终答案是<code>dp[0][n-1]</code>。此时我们有两种遍历方法：要么从左至右写着遍历，要么从下向上从左到右遍历，这样才能保证<code>dp[i][j]</code>的左边、下边、左下边已经计算完毕，得到正确的结果。</p>
+<h3 id="练习"><a href="#练习" class="headerlink" title="练习"></a>练习</h3><p>1.给定一个三角形，找出自顶向下的最小路径和。每一步只能移动到下一行中相邻的结点上。相邻的结点 在这里指的是 下标 与 上一层结点下标 相同或者等于 上一层结点下标 + 1 的两个结点。</p>
+<p>示例：</p>
+<blockquote>
+<p>输入：<br>[<br>  [2],<br> [3,4],<br>[6,5,7],<br>[4,1,8,3]<br>]<br>输出：11（2+3+5+1=11）</p>
+</blockquote>
+<p>自底向上：<br>状态转移方程：<br>$$<br>dp[i][j]=min(dp[i+1][j],dp[i+1][j+1])+triangle[i][j]<br>$$</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">minimumTotal</span><span class="params">(List&lt;List&lt;Integer&gt;&gt; triangle)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(triangle == <span class="keyword">null</span> || triangle.size() == <span class="number">0</span>)&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> n = triangle.size();</span><br><span class="line">        <span class="keyword">int</span>[][] dp = <span class="keyword">new</span> <span class="keyword">int</span>[n+<span class="number">1</span>][n+<span class="number">1</span>];</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = n-<span class="number">1</span> ; i &gt;= <span class="number">0</span> ; i--)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">0</span> ; j &lt;= i ; j++)&#123;</span><br><span class="line">                dp[i][j] = Math.min(dp[i + <span class="number">1</span>][j],dp[i+<span class="number">1</span>][j+<span class="number">1</span>]) + triangle.get(i).get(j);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> dp[<span class="number">0</span>][<span class="number">0</span>];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>自顶向下：<br>状态转移方程：<br>$$<br>dp[i][j]=<br>    \begin{cases}<br>        min(dp[i+1][j],dp[i+1][j+1])+triangle[i][j], &amp; \text{}\<br>        dp[i-1][0] + triangle[i][0],&amp; \text{j = 0} \<br>        dp[i-1][j-1] + triangle[i][j],&amp; \text{i = j} \<br>        triangle[0][0], &amp; \text{i = 0, j = 0}<br>    \end{cases}<br>$$</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">minimumTotal</span><span class="params">(List&lt;List&lt;Integer&gt;&gt; triangle)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(triangle == <span class="keyword">null</span> || triangle.size() == <span class="number">0</span>)&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> n = triangle.size();</span><br><span class="line">        <span class="keyword">int</span>[][] dp = <span class="keyword">new</span> <span class="keyword">int</span>[n][n];</span><br><span class="line">        dp[<span class="number">0</span>][<span class="number">0</span>] = triangle.get(<span class="number">0</span>).get(<span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span> ; i &lt; n ; i++)&#123;</span><br><span class="line">            dp[i][<span class="number">0</span>] = dp[i-<span class="number">1</span>][<span class="number">0</span>] + triangle.get(i).get(<span class="number">0</span>);</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">1</span>; j &lt; i ; j++)&#123;</span><br><span class="line">                dp[i][j] = Math.min(dp[i-<span class="number">1</span>][j-<span class="number">1</span>],dp[i-<span class="number">1</span>][j]) + triangle.get(i).get(j);</span><br><span class="line">            &#125;</span><br><span class="line">            dp[i][i] = dp[i-<span class="number">1</span>][i-<span class="number">1</span>] + triangle.get(i).get(i);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> min = dp[n-<span class="number">1</span>][<span class="number">0</span>];</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span> ; i &lt; n ; i++)&#123;</span><br><span class="line">            min = Math.min(dp[n-<span class="number">1</span>][i],min);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> min;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>可以看出，自下向上没有多余的判断条件，而自顶向下需要判断多余的三种情况，这也是为什么动态规划一般使用自下向上。</p>
+<h4 id="矩阵类型"><a href="#矩阵类型" class="headerlink" title="矩阵类型"></a>矩阵类型</h4><p>1.给定一个包含非负整数的 <em>m</em> x <em>n</em> 网格，请找出一条从左上角到右下角的路径，使得路径上的数字总和为最小。<strong>说明：</strong>每次只能向下或者向右移动一步。</p>
+<p>示例：</p>
+<blockquote>
+<p>输入：<br>[<br>[1,3,1],<br>[1,5,1],<br>[4,2,1]<br>]<br>输出：7 （1-&gt;3-&gt;1-&gt;1-&gt;1）</p>
+</blockquote>
+<p>状态转移方程：<br>$$<br>dp[i][j]=<br>    \begin{cases}<br>        grid[i][j], &amp; \text{i = 0 , j = 0}\<br>        dp[i][j-1]+ grid[i][j], &amp; \text{i = 0 , j != 0}\<br>        dp[i-1][j]+ grid[i][j], &amp; \text{i != 0 , j = 0}\<br>        Math.min(dp[i-1][j],dp[i][j-1]) + grid[i][j],&amp; \text{i != 0 , j !=0}<br>    \end{cases}<br>$$</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">minPathSum</span><span class="params">(<span class="keyword">int</span>[][] grid)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(grid == <span class="keyword">null</span> || grid.length == <span class="number">0</span>)&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> m = grid.length;</span><br><span class="line">        <span class="keyword">int</span> n = grid[<span class="number">0</span>].length;</span><br><span class="line">        <span class="keyword">int</span>[][] dp = <span class="keyword">new</span> <span class="keyword">int</span>[m][n];</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span> ; i &lt; m ; i++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">0</span> ; j &lt; n ; j++)&#123;</span><br><span class="line">                <span class="keyword">if</span>(i == <span class="number">0</span> &amp;&amp; j == <span class="number">0</span>)&#123;</span><br><span class="line">                    dp[i][j] = grid[i][j];</span><br><span class="line">                &#125;<span class="keyword">else</span> <span class="keyword">if</span>(i == <span class="number">0</span> &amp;&amp; j != <span class="number">0</span>)&#123;</span><br><span class="line">                    dp[i][j] = dp[i][j-<span class="number">1</span>] + grid[i][j];</span><br><span class="line">                &#125;<span class="keyword">else</span> <span class="keyword">if</span>(i != <span class="number">0</span> &amp;&amp; j == <span class="number">0</span>)&#123;</span><br><span class="line">                    dp[i][j] = dp[i-<span class="number">1</span>][j] + grid[i][j];</span><br><span class="line">                &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                    dp[i][j] = Math.min(dp[i-<span class="number">1</span>][j],dp[i][j-<span class="number">1</span>]) + grid[i][j];</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> dp[m-<span class="number">1</span>][n-<span class="number">1</span>];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>2.一个机器人位于一个 m x n 网格的左上角 。机器人每次只能向下或者向右移动一步。机器人试图达到网格的右下角。问总共有多少条不同的路径？</p>
+<p>示例：</p>
+<blockquote>
+<p>输入：m = 3, n = 2<br>输出：3 （1. 向右 -&gt; 向右 -&gt; 向下；2. 向右 -&gt; 向下 -&gt; 向右 ；3. 向下 -&gt; 向右 -&gt; 向右）</p>
+<p>输入：m = 7 ， n = 3<br>输出：28</p>
+</blockquote>
+<p>状态转移方程：<br>$$<br>dp[i][j]=<br>\begin{cases}<br>        1, &amp; \text{i = 0 || j = 0}\<br>        dp[i-1][j] + dp[i][j-1],&amp; \text{else}<br>    \end{cases}<br>$$</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">uniquePaths</span><span class="params">(<span class="keyword">int</span> m, <span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span>[][] dp = <span class="keyword">new</span> <span class="keyword">int</span>[m][n];</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span> ; i &lt; m ; i++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">0</span> ; j &lt; n ; j++)&#123;</span><br><span class="line">                <span class="keyword">if</span>(i == <span class="number">0</span> || j == <span class="number">0</span>)&#123;</span><br><span class="line">                    dp[i][j] = <span class="number">1</span>;</span><br><span class="line">                &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                    dp[i][j] = dp[i-<span class="number">1</span>][j] + dp[i][j-<span class="number">1</span>];</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> dp[m-<span class="number">1</span>][n-<span class="number">1</span>];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>3.一个机器人位于一个 m x n 网格的左上角 。机器人每次只能向下或者向右移动一步。机器人试图达到网格的右下角。现在考虑网格中有障碍物。那么从左上角到右下角将会有多少条不同的路径？网格中的障碍物和空位置分别用 <code>1</code> 和 <code>0</code> 来表示。</p>
+<p>示例：</p>
+<blockquote>
+<p>输入：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[</span><br><span class="line">[0,0,0],</span><br><span class="line">[0,1,0],</span><br><span class="line">[0,0,0]</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+
+<p>输出：2</p>
+</blockquote>
+<p>$$<br>dp[i][j]=<br>\begin{cases}<br>        0, &amp; \text{（i，j）上有障碍物}\<br>        dp[i-1][j] + dp[i][j-1],&amp; \text{（i，j）上无障碍物}<br>    \end{cases}<br>$$</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//obstacleGrid[i][j] == 1 表示有障碍物</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">uniquePathsWithObstacles</span><span class="params">(<span class="keyword">int</span>[][] obstacleGrid)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(obstacleGrid.length == <span class="number">0</span> || obstacleGrid == <span class="keyword">null</span>)&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> m = obstacleGrid.length;</span><br><span class="line">        <span class="keyword">int</span> n = obstacleGrid[<span class="number">0</span>].length;</span><br><span class="line">        <span class="keyword">int</span>[][] dp = <span class="keyword">new</span> <span class="keyword">int</span>[m][n];</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span> ; i &lt; m ; i++)&#123;		<span class="comment">//第0行初始化，分别赋值，赋值为1，如果碰到障碍物，则障碍物之后所有点全为0，因为有障碍物，所以后面的点都不可达</span></span><br><span class="line">            <span class="keyword">if</span>(obstacleGrid[i][<span class="number">0</span>] == <span class="number">1</span>)&#123;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                dp[i][<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">0</span> ; j &lt; n ; j++)&#123;	<span class="comment">//第0列初始化，分别赋值，赋值为1，如果碰到障碍物，则障碍物之后所有点全为0，因为有障碍物，所以后面的点都不可达</span></span><br><span class="line">            <span class="keyword">if</span>(obstacleGrid[<span class="number">0</span>][j] == <span class="number">1</span>)&#123;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                dp[<span class="number">0</span>][j] = <span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span> ; i &lt; m ; i++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">1</span> ; j &lt; n ; j++)&#123;</span><br><span class="line">                <span class="keyword">if</span>(obstacleGrid[i][j] == <span class="number">1</span>)&#123;</span><br><span class="line">                    dp[i][j] = <span class="number">0</span>;</span><br><span class="line">                &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                    dp[i][j] = dp[i-<span class="number">1</span>][j] + dp[i][j-<span class="number">1</span>];</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> dp[m-<span class="number">1</span>][n-<span class="number">1</span>];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h4 id="序列类型"><a href="#序列类型" class="headerlink" title="序列类型"></a>序列类型</h4><p>1.假设你正在爬楼梯。需要 <em>n</em> 阶你才能到达楼顶。每次你可以爬 1 或 2 个台阶。你有多少种不同的方法可以爬到楼顶呢？</p>
+<p>示例：</p>
+<blockquote>
+<p>输入：2<br>输出：2（1 阶 + 1 阶或2阶）</p>
+<p>输入：3<br>输出：3</p>
+</blockquote>
+<p>状态转移方程：<br>$$<br>dp[i] =<br>\begin{cases}<br>        1, &amp; \text{i=1}\<br>        2, &amp; \text{i=2}\<br>        dp[i-1] + dp[i-2],&amp; \text{i&gt;2}<br>    \end{cases}<br>$$</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">climbStairs</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(n &lt;= <span class="number">0</span> )&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span>[] dp = <span class="keyword">new</span> <span class="keyword">int</span>[n+<span class="number">2</span>];	<span class="comment">//dp使用时一般下标对应i，所以从1开始容易理解。这里规定数组大小为n+2是防止数组指针溢出</span></span><br><span class="line">        dp[<span class="number">1</span>] = <span class="number">1</span>;</span><br><span class="line">        dp[<span class="number">2</span>] = <span class="number">2</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">3</span> ; i &lt;= n ; i++)&#123;	<span class="comment">//因为数组【0】未使用，从1开始，所以这里应该是 i &lt;= n</span></span><br><span class="line">            dp[i] = dp[i-<span class="number">1</span>] + dp[i-<span class="number">2</span>];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> dp[n];</span><br><span class="line">    </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<p>2.给定一个非负整数数组，你最初位于数组的第一个位置。数组中的每个元素代表你在该位置可以跳跃的最大长度。判断你是否能够到达最后一个位置。</p>
+<p>示例：</p>
+<blockquote>
+<p>输入：[2,3,1,1,4]<br>输出：true</p>
+<p>输入：[3,2,1,0,4]<br>输出：false</p>
+</blockquote>
+<p>状态转移方程：<br>$$<br>dp[i] =<br>\begin{cases}<br>        false, &amp; \text{else}\<br>        true,&amp; \text{dp[j] == true &amp;&amp; j + nums[j] &gt;= i (j in range(0,i))}<br>    \end{cases}<br>$$</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">canJump</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(nums == <span class="keyword">null</span> || nums.length == <span class="number">0</span>)&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> n = nums.length;</span><br><span class="line">        <span class="keyword">boolean</span>[] dp = <span class="keyword">new</span> <span class="keyword">boolean</span>[n];</span><br><span class="line">        dp[<span class="number">0</span>] = <span class="keyword">true</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; n ; i++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">0</span> ; j &lt; i ; j++)&#123;</span><br><span class="line">                <span class="keyword">if</span>(dp[j] == <span class="keyword">true</span> &amp;&amp; j + nums[j] &gt;= i)&#123;</span><br><span class="line">                    dp[i] = <span class="keyword">true</span>;</span><br><span class="line">                    <span class="keyword">break</span>;	<span class="comment">//只要有一个j满足，就可以break，进行i+1循环（有一个前面的格子能跳到当前格子，即当前格子可达。）</span></span><br><span class="line">                &#125;			<span class="comment">//boolean[] 数组默认值为false，所以不需要else去赋值</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> dp[n-<span class="number">1</span>];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>3.给定一个非负整数数组，你最初位于数组的第一个位置。数组中的每个元素代表你在该位置可以跳跃的最大长度。你的目标是使用最少的跳跃次数到达数组的最后一个位置。</p>
+<p>示例：</p>
+<blockquote>
+<p>输入：[2,3,1,1,4]<br>输出：2</p>
+</blockquote>
+<p>![正向查找图示](C:\Users\wangdi\Pictures\Saved Pictures\正向查找图示.png)</p>
+<p>状态转移方程：<br>$$<br>dp[i] =<br>\begin{cases}<br>        0, &amp; \text{i = 0}\<br>        Math.min(dp[j]+1,dp[i]),&amp; \text{n &gt;i &gt; 0 , j in range(0,i)}<br>    \end{cases}<br>$$</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">jump</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(nums == <span class="keyword">null</span> || nums.length == <span class="number">0</span>)&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> n = nums.length;</span><br><span class="line">        <span class="keyword">int</span>[] dp = <span class="keyword">new</span> <span class="keyword">int</span>[n];</span><br><span class="line">        dp[<span class="number">0</span>] = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span> ; i &lt; n ; i++)&#123;</span><br><span class="line">            dp[i] = i;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">0</span> ; j &lt; i ; j++)&#123;</span><br><span class="line">                <span class="keyword">if</span>(nums[j] + j &gt;= i)&#123;</span><br><span class="line">                    dp[i] = Math.min(dp[j] + <span class="number">1</span> , dp[i]);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> dp[n-<span class="number">1</span>];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/************************************用动态规划会超时，可以使用贪心算法*************************/</span></span><br><span class="line"><span class="comment">//在遍历数组时，我们不访问最后一个元素，这是因为在访问最后一个元素之前，我们的边界一定大于等于最后一个位置，否则就无法跳到最后一个位置了。如果访问最后一个元素，在边界正好为最后一个位置的情况下，我们会增加一次「不必要的跳跃次数」，因此我们不必访问最后一个元素。</span></span><br><span class="line"><span class="comment">//在具体的实现中，我们维护当前能够到达的最大下标位置，记为边界。我们从左到右遍历数组，到达边界时，更新边界并将跳跃次数增加 1。</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">jump</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(nums == <span class="keyword">null</span> || nums.length == <span class="number">0</span>)&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> n = nums.length;</span><br><span class="line">        <span class="keyword">int</span> step = <span class="number">0</span>, end = <span class="number">0</span>, maxPos = <span class="number">0</span>;	<span class="comment">//maxPos跳跃最远距离；step跳跃次数；end边界</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span> ; i &lt; n-<span class="number">1</span> ; i++)&#123;</span><br><span class="line">            maxPos = Math.max(maxPos, nums[i] + i);</span><br><span class="line">            <span class="keyword">if</span>(i == end)&#123;</span><br><span class="line">                end = maxPos;</span><br><span class="line">                ++step;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> step;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<p>4.给定一个字符串 <em>s</em>，将 <em>s</em> 分割成一些子串，使每个子串都是回文串。返回符合要求的最少分割次数。</p>
+<p>示例：</p>
+<blockquote>
+<p>输入：”aab”<br>输出：1 （进行一次分割就可将 s 分割成 [“aa”,”b”] 这样两个回文子串。）</p>
+</blockquote>
+<p>![分割回文字符串](C:\Users\wangdi\Pictures\Saved Pictures\分割回文字符串.png)</p>
+<p>状态转移方程：<br>$$<br>dp[i] = min(dp[j] + 1) ,j in range(i) and s[j+1,i]是回文</p>
+<p>$$</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">minCut</span><span class="params">(String s)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> len = s.length();</span><br><span class="line">        <span class="keyword">if</span> (len &lt; <span class="number">2</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span>[] dp = <span class="keyword">new</span> <span class="keyword">int</span>[len];</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; len; i++) &#123;</span><br><span class="line">            dp[i] = i;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; len; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (checkPalindrome(s, <span class="number">0</span>, i)) &#123;</span><br><span class="line">                dp[i] = <span class="number">0</span>;</span><br><span class="line">                <span class="keyword">continue</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">// 当 j == i 成立的时候，s[i] 就一个字符，一定是回文</span></span><br><span class="line">            <span class="comment">// 因此，枚举到 i - 1 即可</span></span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; i; j++) &#123;</span><br><span class="line">                <span class="keyword">if</span> (checkPalindrome(s, j + <span class="number">1</span>, i)) &#123;</span><br><span class="line">                    dp[i] = Math.min(dp[i], dp[j] + <span class="number">1</span>);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> dp[len - <span class="number">1</span>];</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">boolean</span> <span class="title">checkPalindrome</span><span class="params">(String s, <span class="keyword">int</span> left, <span class="keyword">int</span> right)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">while</span> (left &lt; right) &#123;</span><br><span class="line">            <span class="keyword">if</span> (s.charAt(left) != s.charAt(right)) &#123;</span><br><span class="line">                <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            left++;</span><br><span class="line">            right--;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/***********************************************优化*****************************************/</span></span><br><span class="line"><span class="comment">//上面判断回文串的时候方法 checkPalindrome() 是线性的，时间复杂度为 O(N)，我们可以使用预处理的动态规划数组，通过O（1）的时间复杂度，得到一个子串是否是回文的结果。</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">minCut</span><span class="params">(String s)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> len = s.length();</span><br><span class="line">        <span class="comment">// 特判</span></span><br><span class="line">        <span class="keyword">if</span> (len &lt; <span class="number">2</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 状态定义：dp[i]：前缀子串 s[0:i] （包括索引 i 处的字符）符合要求的最少分割次数</span></span><br><span class="line">        <span class="comment">// 状态转移方程：</span></span><br><span class="line">        <span class="comment">// dp[i] = min(dp[j] + 1 if s[j + 1: i] 是回文 for j in range(i))</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span>[] dp = <span class="keyword">new</span> <span class="keyword">int</span>[len];</span><br><span class="line">        <span class="comment">// 2 个字符最多分割 1 次；</span></span><br><span class="line">        <span class="comment">// 3 个字符最多分割 2 次</span></span><br><span class="line">        <span class="comment">// 初始化的时候，设置成为这个最多分割次数</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; len; i++) &#123;</span><br><span class="line">            dp[i] = i;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 参考「力扣」第 5 题：最长回文子串 动态规划 的解法</span></span><br><span class="line">        <span class="keyword">boolean</span>[][] checkPalindrome = <span class="keyword">new</span> <span class="keyword">boolean</span>[len][len];</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> right = <span class="number">0</span>; right &lt; len; right++) &#123;</span><br><span class="line">            <span class="comment">// 注意：left &lt;= right 取等号表示 1 个字符的时候也需要判断</span></span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> left = <span class="number">0</span>; left &lt;= right; left++) &#123;</span><br><span class="line">                <span class="keyword">if</span> (s.charAt(left) == s.charAt(right) &amp;&amp; (right - left &lt;= <span class="number">2</span> || checkPalindrome[left + <span class="number">1</span>][right - <span class="number">1</span>])) &#123;</span><br><span class="line">                    checkPalindrome[left][right] = <span class="keyword">true</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 1 个字符的时候，不用判断，因此 i 从 1 开始</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; len; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (checkPalindrome[<span class="number">0</span>][i])&#123;</span><br><span class="line">                dp[i] = <span class="number">0</span>;</span><br><span class="line">                <span class="keyword">continue</span>;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 注意：这里是严格，要保证 s[j + 1:i] 至少得有一个字符串</span></span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; i; j++) &#123;</span><br><span class="line">                <span class="keyword">if</span> (checkPalindrome[j + <span class="number">1</span>][i]) &#123;</span><br><span class="line">                    dp[i] = Math.min(dp[i], dp[j] + <span class="number">1</span>);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> dp[len - <span class="number">1</span>];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<p>4.给定一个无序的整数数组，找到其中最长上升子序列的长度。（子串连续，子序列不一定连续）</p>
+<p>示例：</p>
+<blockquote>
+<p>输入： [10,9,2,5,3,7,101,18]<br>输出：4   （最长的上升子序列是 [2,3,7,101]，它的长度是 4。）</p>
+</blockquote>
+<p>状态转移方程：<br>$$<br>dp[i] = max(dp[j]) + 1 , i &gt; j &gt;= 0\  and  \ nums[i]&gt;nums[j]<br>$$</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">lengthOfLIS</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(nums == <span class="keyword">null</span> || nums.length == <span class="number">0</span>)&#123;		<span class="comment">//判空</span></span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span>[] dp = <span class="keyword">new</span> <span class="keyword">int</span>[nums.length];	<span class="comment">//dp[i]表示以nums[i]这个数结尾的最长递增子序列</span></span><br><span class="line">        Arrays.fill(dp,<span class="number">1</span>);		<span class="comment">//将dp数组全部初始化为1，因为序列最少也要包含自己，所以长度最小为1</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span> ; i &lt; nums.length ; i++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">0</span> ; j &lt; i ; j++)&#123;</span><br><span class="line">                <span class="keyword">if</span>(nums[i]&gt;nums[j])&#123;	<span class="comment">//当nums[i]&gt;nums[j]时，说明dp[j] 加上nums[i]可以组成上升子序列，取max值取得最大长度</span></span><br><span class="line">                    dp[i] = Math.max(dp[i],dp[j]+<span class="number">1</span>);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> res = <span class="number">0</span>;	</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span> ; i &lt; dp.length ; i++)&#123;	<span class="comment">//遍历dp数组，返回最大长度</span></span><br><span class="line">            res = Math.max(res,dp[i]);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>5.给定一个非空字符串 s 和一个包含非空单词列表的字典 wordDict，判定 s 是否可以被空格拆分为一个或多个在字典中出现的单词。说明：拆分时可以重复使用字典中的单词。你可以假设字典中没有重复的单词。</p>
+<p>示例：</p>
+<blockquote>
+<p>输入：s = “leetcode”, wordDict = [“leet”, “code”]<br>输出：true （因为 “leetcode” 可以被拆分成 “leet code”。）</p>
+<p>输入：s = “applepenapple”, wordDict = [“apple”, “pen”]<br>输出：true   （因为 “applepenapple” 可以被拆分成 “apple pen apple”。）</p>
+<p>输入： s = “catsandog”, wordDict = [“cats”, “dog”, “sand”, “and”, “cat”]<br>输出：false</p>
+</blockquote>
+<p>![单词拆分](C:\Users\wangdi\Pictures\Saved Pictures\单词拆分.png)</p>
+<p>状态转移方程：<br>$$<br>dp[i] =<br>\begin{cases}<br>    true, &amp; \text{i = 0}\<br>    true,&amp; \text{n &gt;= i &gt; j &gt;= 0 and dp[j] == true and s[j:i] in wordDict}\<br>    false,&amp; \text{else}<br>\end{cases}<br>$$</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">wordBreak</span><span class="params">(String s, List&lt;String&gt; wordDict)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> n =  s.length();</span><br><span class="line">        <span class="keyword">boolean</span>[] dp = <span class="keyword">new</span> <span class="keyword">boolean</span>[n+<span class="number">1</span>];</span><br><span class="line">        dp[<span class="number">0</span>] = <span class="keyword">true</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span> ; i &lt;= n ; i++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j = i - <span class="number">1</span> ; j &gt;= <span class="number">0</span> ; j--)&#123;</span><br><span class="line">                <span class="keyword">if</span>(dp[j] &amp;&amp; wordDict.contains(s.substring(j, i)))&#123;</span><br><span class="line">                    dp[i] = <span class="keyword">true</span>;</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> dp[n];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="双序列DP"><a href="#双序列DP" class="headerlink" title="双序列DP"></a>双序列DP</h4><p>1.给定两个字符串 text1 和 text2，返回这两个字符串的最长公共子序列的长度。一个字符串的 子序列 是指这样一个新的字符串：它是由原字符串在不改变字符的相对顺序的情况下删除某些字符（也可以不删除任何字符）后组成的新字符串。例如，”ace” 是 “abcde” 的子序列，但 “aec” 不是 “abcde” 的子序列。两个字符串的「公共子序列」是这两个字符串所共同拥有的子序列。若这两个字符串没有公共子序列，则返回 0。</p>
+<p>示例：</p>
+<blockquote>
+<p>输入：text1 = “abcde”, text2 = “ace”<br>输出：3（“ace”）</p>
+<p>输入：text1 = “abc”, text2 = “abc”<br>输出：3（“abc”）</p>
+<p>输入：text1 = “abc”, text2 = “def”<br>输出：0</p>
+</blockquote>
+<p>![双序列DP1](C:\Users\wangdi\Pictures\Saved Pictures\双序列DP1.jpg)</p>
+<p>状态转移方程：<br>$$<br>dp[i][j] =<br>\begin{cases}<br>    dp[i-1][j-1] + 1,&amp; \text{text1.charAt(i) == text2.charAt(j)}\<br>    Math.max(dp[i-1][j],dp[i][j-1],&amp; \text{text1.charAt(i) != text2.charAt(j)}<br>\end{cases}<br>$$</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//dp[i][j]表示的是s1[0...i-1]s1[0...i−1]与s2[0...j-1]s2[0...j−1]的最长公共子序列的长度</span></span><br><span class="line"><span class="comment">//当s1[i]==s2[j]s1[i]==s2[j],说明这两个字符是公共的字符，只要考察其子问题，dp[i-1][j-1]dp[i−1][j−1]的长度即可，在此基础上+1</span></span><br><span class="line"><span class="comment">//当s1[i]!=s2[j]s1[i]!=s2[j],说明这两个字符不是公共的字符，只要考察其两个子问题，dp[i-1][j],dp[i][j-1]dp[i−1][j],dp[i][j−1],取maxmax</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">longestCommonSubsequence</span><span class="params">(String text1, String text2)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> n1 = text1.length();</span><br><span class="line">        <span class="keyword">int</span> n2 = text2.length();</span><br><span class="line">        <span class="keyword">int</span>[][] dp = <span class="keyword">new</span> <span class="keyword">int</span>[n1+<span class="number">1</span>][n2+<span class="number">1</span>];</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span> ; i &lt;= n1 ; i++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= n2 ; j++)&#123;</span><br><span class="line">                <span class="keyword">if</span>(text1.charAt(i-<span class="number">1</span>) == text2.charAt(j-<span class="number">1</span>))&#123;</span><br><span class="line">                    dp[i][j] = dp[i-<span class="number">1</span>][j-<span class="number">1</span>] + <span class="number">1</span>;</span><br><span class="line">                &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                    dp[i][j] = Math.max(dp[i-<span class="number">1</span>][j],dp[i][j-<span class="number">1</span>]);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> dp[n1][n2];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>2.给你两个单词 word1 和 word2，请你计算出将 word1 转换成 word2 所使用的最少操作数 。</p>
+<p>你可以对一个单词进行如下三种操作：</p>
+<p>插入一个字符<br>删除一个字符<br>替换一个字符</p>
+<p>示例：</p>
+<blockquote>
+<p>输入：word1 = “horse”, word2 = “ros”<br>输出：3    （horse -&gt; rorse，rorse -&gt; rose，rose -&gt; ros）</p>
+<p>输入：word1 = “intention”, word2 = “execution”<br>输出：5    （intention -&gt; inention，inention -&gt; enention，enention -&gt; exention，exention -&gt; exection，exection -&gt; execution）</p>
+</blockquote>
+<p>![双dp](C:\Users\wangdi\Pictures\Saved Pictures\双dp.png)</p>
+<p>状态转移方程：<br>$$<br>dp[i][j] =<br>\begin{cases}<br>    1+min(dp[i][j-1],dp[i-1][j],dp[i-1][j-1]-1),&amp; \text{A和B的最后一个字母相同}\<br>    1+min(dp[i][j-1],dp[i-1][j],dp[i-1][j-1]）,&amp; \text{A和B的最后一个字母不同}  \<br>    dp[i][0] = i , &amp; \text{相当于对word1执行i次删除}\<br>    dp[0][j] = j , &amp; \text{相当于对word1执行j次插入}<br>\end{cases}<br>$$</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">minDistance</span><span class="params">(String word1, String word2)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> n = word1.length();</span><br><span class="line">        <span class="keyword">int</span> m = word2.length();</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>(n * m == <span class="number">0</span>)&#123;     <span class="comment">//有一个字符串为空</span></span><br><span class="line">            <span class="keyword">return</span> n + m;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span>[][] dp = <span class="keyword">new</span> <span class="keyword">int</span>[n+<span class="number">1</span>][m+<span class="number">1</span>];</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span> ; i &lt; n+<span class="number">1</span> ; i++)&#123;			<span class="comment">//边界状态初始化</span></span><br><span class="line">            dp[i][<span class="number">0</span>] = i;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">0</span> ; j &lt; m+<span class="number">1</span> ; j++)&#123;</span><br><span class="line">            dp[<span class="number">0</span>][j] = j;</span><br><span class="line">        &#125;</span><br><span class="line">	</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span> ; i &lt; n+<span class="number">1</span> ; i++)&#123;				<span class="comment">//计算dp</span></span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">1</span> ; j &lt; m+<span class="number">1</span> ; j++)&#123;</span><br><span class="line">                <span class="keyword">int</span> left = dp[i - <span class="number">1</span>][j] + <span class="number">1</span>;</span><br><span class="line">                <span class="keyword">int</span> down = dp[i][j - <span class="number">1</span>] + <span class="number">1</span>;</span><br><span class="line">                <span class="keyword">int</span> left_down = dp[i - <span class="number">1</span>][j - <span class="number">1</span>];</span><br><span class="line">                <span class="keyword">if</span> (word1.charAt(i - <span class="number">1</span>) != word2.charAt(j - <span class="number">1</span>))</span><br><span class="line">                    left_down += <span class="number">1</span>;</span><br><span class="line">                dp[i][j] = Math.min(left, Math.min(down, left_down));</span><br><span class="line"></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> dp[n][m];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<p>3.给定一个字符串 <code>s</code> ，找到其中最长的回文子序列，并返回该序列的长度。可以假设 <code>s</code> 的最大长度为 <code>1000</code> 。</p>
+<p>示例：</p>
+<blockquote>
+<p>输入：”bbbab”<br>输出：4 （一个可能的最长回文子序列为 “bbbb”。）</p>
+<p>输入：”cbbd”<br>输出：2 （一个可能的最长回文子序列为 “bb”。）</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//dp[i][j] 表示s的第i个字符到第j个字符组成的子串中，最长的回文序列长度</span></span><br><span class="line"><span class="comment">//初始化：dp[i][i] = 1 单个字符的最长回文序列是1</span></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">转移方程：</span></span><br><span class="line"><span class="comment">如果s的第i个字符和第j个字符相同：dp[i][j] = dp[i+1][j-1] + 2</span></span><br><span class="line"><span class="comment">如果s的第i个字符和第j个字符不相同：dp[i][j] = max(dp[i+1][j],dp[i][j-1])</span></span><br><span class="line"><span class="comment">注意遍历顺序：i从最后一个字符开始往前遍历，j从i+1开始往后遍历，这样能保证每个子问题都被遍历到</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="comment">//返回结果： dp[0][n-1]</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">longestPalindromeSubseq</span><span class="params">(String s)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> n = s.length();</span><br><span class="line">        <span class="keyword">int</span>[][] dp = <span class="keyword">new</span> <span class="keyword">int</span>[n][n];</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = n-<span class="number">1</span> ; i &gt;=<span class="number">0</span> ; i--)&#123;</span><br><span class="line">            dp[i][i] = <span class="number">1</span>;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j = i+<span class="number">1</span> ; j &lt; n;j++)&#123;</span><br><span class="line">                <span class="keyword">if</span>(s.charAt(i) == s.charAt(j))&#123;</span><br><span class="line">                    dp[i][j] = dp[i+<span class="number">1</span>][j-<span class="number">1</span>] + <span class="number">2</span>;</span><br><span class="line">                &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                    dp[i][j] = Math.max(dp[i+<span class="number">1</span>][j],dp[i][j-<span class="number">1</span>]);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> dp[<span class="number">0</span>][n-<span class="number">1</span>];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="零钱和背包"><a href="#零钱和背包" class="headerlink" title="零钱和背包"></a>零钱和背包</h4><p>1.给定不同面额的硬币 coins 和一个总金额 amount。编写一个函数来计算可以凑成总金额所需的最少的硬币个数。如果没有任何一种硬币组合能组成总金额，返回 -1。</p>
+<p>示例：</p>
+<blockquote>
+<p>输入：coins = [1, 2, 5], amount = 11<br>输出：3（11 = 5 +  5 + 1）</p>
+<p>输入：coins = [2], amount = 3<br>输出：-1</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th align="center">dp[i]</th>
+<th align="center">最小硬币数</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">dp[0]</td>
+<td align="center">0（金额为0不能由硬币组成）</td>
+</tr>
+<tr>
+<td align="center">dp[1]</td>
+<td align="center">1（dp[1] = min(dp[1-1],dp[1-2],dp[1-5])）+1</td>
+</tr>
+<tr>
+<td align="center">dp[2]</td>
+<td align="center">1(dp[2] = min(dp[2-1],dp[2-1],dp[2-1])) + 1</td>
+</tr>
+<tr>
+<td align="center">dp[3]</td>
+<td align="center">2(dp[3] = min(dp[3-1],dp[3-2],dp[3-5])) + 1</td>
+</tr>
+<tr>
+<td align="center">dp[4]</td>
+<td align="center">2(dp[4] = min(dp[4-1]dp[4-2],dp[4-5])) + 1</td>
+</tr>
+<tr>
+<td align="center">…</td>
+<td align="center">…</td>
+</tr>
+<tr>
+<td align="center">dp[11]</td>
+<td align="center">3(dp[11] = min(dp[11-1],dp[11-2],dp[11-5])) + 1</td>
+</tr>
+<tr>
+<td align="center">注意</td>
+<td align="center">这里的当作减数的1，2，5为硬币面值，即coins = [1,2,5]</td>
+</tr>
+</tbody></table>
+<p>状态转移方程：<br>$$<br>dp[i] =Math.min(dp[i],dp[i-coins[j]]+1)<br>$$</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">coinChange</span><span class="params">(<span class="keyword">int</span>[] coins, <span class="keyword">int</span> amount)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span>[] dp = <span class="keyword">new</span> <span class="keyword">int</span>[amount+<span class="number">1</span>];	<span class="comment">//dp[i]表示钱数为i时的最小硬币数</span></span><br><span class="line">        Arrays.fill(dp,amount+<span class="number">1</span>);		<span class="comment">//初始化前数为i时的硬币数</span></span><br><span class="line">        dp[<span class="number">0</span>] = <span class="number">0</span>;						<span class="comment">//钱数为0时最小硬币数为0</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span> ; i &lt; amount + <span class="number">1</span> ; i++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">0</span> ; j &lt; coins.length ; j++)&#123;</span><br><span class="line">                <span class="keyword">if</span>(i &gt;= coins[j])&#123;</span><br><span class="line">                    dp[i] = Math.min(dp[i],dp[i-coins[j]]+<span class="number">1</span>);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(dp[amount] &gt; amount)&#123;</span><br><span class="line">            <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            <span class="keyword">return</span> dp[amount];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<p>2.给定不同面额的硬币和一个总金额。写出函数来计算可以凑成总金额的硬币组合数。假设每一种面额的硬币有无限个。 </p>
+<p>示例：</p>
+<blockquote>
+<p>输入：amount = 5, coins = [1, 2, 5]<br>输出：4 （5、2+2+1、2+1+1+1、1+1+1+1+1）</p>
+<p>输入： amount = 3, coins = [2]<br>输出：0 （只用面额2的硬币不能凑成总金额3。）</p>
+<p>输入：amount = 10, coins = [10]<br>输出：1</p>
+</blockquote>
+<p>状态转移方程：<br>$$<br>dp[i][j] =<br>\begin{cases}<br>    dp[i-1][j] + dp[i][j-coins[i-1],&amp; \text{j &gt;= coins[i-1]}\<br>    dp[i-1][j], &amp; \text{else}<br>\end{cases}<br>$$</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">change</span><span class="params">(<span class="keyword">int</span> amount, <span class="keyword">int</span>[] coins)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span>[][] dp = <span class="keyword">new</span> <span class="keyword">int</span>[coins.length+<span class="number">1</span>][amount+<span class="number">1</span>];     <span class="comment">//dp[i][j]表示：若只使用cois前i个物品，当背包容量为j时，有dp[i][j]种方法可以装满背包</span></span><br><span class="line"> </span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span> ; i &lt;= coins.length ; i++)&#123;            <span class="comment">//若凑出金额为0，则“无为而治”是唯一一种凑法</span></span><br><span class="line">            dp[i][<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span> ; i &lt; coins.length+<span class="number">1</span> ; i++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">1</span> ; j &lt; amount+<span class="number">1</span> ; j++)&#123;</span><br><span class="line">                <span class="keyword">if</span>(j &gt;= coins[i-<span class="number">1</span>])&#123;</span><br><span class="line">                    dp[i][j] = dp[i-<span class="number">1</span>][j] + dp[i][j-coins[i-<span class="number">1</span>]];	<span class="comment">//如果不把第i个物品装入背包，那么凑出面额j的方法数dp[i][j]应该等于dp[i-1][j]；如果把第i个物品装入背包，也就是说要使用coins[i]这个面值的硬币，那么dp[i][j]应该等于dp[i][j-coins[i-1]]；综上是两种选择，我们的dp[i][j]是共有多少种凑法，所以dp[i][j]的值应该是两种选择的结果之和</span></span><br><span class="line">                    <span class="comment">//我们的索引i是从1开始的，所以conis的索引是i-1时表示第i个硬币的面值</span></span><br><span class="line">                &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                    dp[i][j] = dp[i-<span class="number">1</span>][j];</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> dp[coins.length][amount];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>3.给定一个<strong>只包含正整数</strong>的<strong>非空</strong>数组。是否可以将这个数组分割成两个子集，使得两个子集的元素和相等。</p>
+<p>示例：</p>
+<blockquote>
+<p>输入：[1, 5, 11, 5]<br>输出：true （数组可以分割成 [1, 5, 5] 和 [11]）</p>
+<p>输入：[1, 2, 3, 5]<br>输出：false</p>
+</blockquote>
+<p>状态转移方程：<br>$$<br>dp[i][j] =<br>\begin{cases}<br>    dp[i-1][j],&amp; \text{}\<br>    true,&amp; \text{nums[i] = j}\<br>    dp[i-1][j-nums[i]], &amp; \text{nums[i]&lt;j}<br>\end{cases}<br>$$</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//本题可以理解为可装载重量为sum/2的背包和N个物品，每个物品重量为nums[i]。转换为背包问题。剩下思路同上题</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">canPartition</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> sum = <span class="number">0</span>;</span><br><span class="line">        <span class="comment">//计算数组的和sum，如果sum为奇数，那肯定不能分成两部分，直接返回false</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i&lt;nums.length; i++) &#123;</span><br><span class="line">            sum += nums[i];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(sum % <span class="number">2</span> != <span class="number">0</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        sum = sum/<span class="number">2</span>;</span><br><span class="line">        <span class="comment">//初始化base case :dp[...][0] = true，相当于当载重量为0的时候，肯定什么东西也不用放，背包肯定默认是满的，因为载重量为0嘛，所以是true；dp[0][...] = false,相当于在任一载重量时，什么东西都不放，那肯定背包没有满，所以是false</span></span><br><span class="line">        <span class="keyword">boolean</span>[][] dp = <span class="keyword">new</span> <span class="keyword">boolean</span>[nums.length+<span class="number">1</span>][sum+<span class="number">1</span>];</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i&lt;nums.length+<span class="number">1</span>; i++) &#123;</span><br><span class="line">            dp[i][<span class="number">0</span>] = <span class="keyword">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//这里可以省略，因为java中boolean量默认是false，这里没有注释掉是因为想把逻辑表达清楚。</span></span><br><span class="line">        <span class="comment">//for(int i = 0; i&lt;sum+1; i++) dp[0][i] = false;</span></span><br><span class="line">        </span><br><span class="line">        </span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i&lt;=nums.length; i++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">1</span>; j&lt;=sum; j++)&#123;</span><br><span class="line">                <span class="comment">//如果当前的背包容量比要放的数量都小，那就没法放，只能继承之前的状态</span></span><br><span class="line">                <span class="keyword">if</span>(j &lt; nums[i-<span class="number">1</span>]) &#123;</span><br><span class="line">                    dp[i][j] = dp[i-<span class="number">1</span>][j];</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">else</span>&#123;</span><br><span class="line">                    <span class="comment">//放入或者不放入，不管哪种状态，只要能放满就可以</span></span><br><span class="line">                    dp[i][j] = dp[i-<span class="number">1</span>][j] || dp[i-<span class="number">1</span>][j-nums[i-<span class="number">1</span>]];</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> dp[nums.length][sum];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h4 id="高楼扔鸡蛋"><a href="#高楼扔鸡蛋" class="headerlink" title="高楼扔鸡蛋"></a>高楼扔鸡蛋</h4><p>1.你⾯前有⼀栋从 1 到 N 共 N 层的楼，然后给你 K 个鸡蛋（ K ⾄少为 1）。现在确定这栋楼存在楼层 0 &lt;= F &lt;= N ，在这层楼将鸡蛋扔下去，鸡蛋恰好没摔碎（⾼于 F 的楼层都会碎，低于 F 的楼层都不会碎）。现在问你，最坏情况下，你⾄少要扔⼏次鸡蛋，才能确定这个楼层F 呢？</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">选择在第i层仍鸡蛋，可能出现的情况：</span><br><span class="line">1.如果鸡蛋碎了，那么鸡蛋个数为K-1，搜索楼层变为[1,i-1] 共 i-1层</span><br><span class="line">2.如果鸡蛋没碎，那么鸡蛋个数K不变，搜索的楼层变为[i+1,N] 共 N-i层</span><br></pre></td></tr></table></figure>
+
+<p>状态转移方程：<br>$$<br>dp[k][m]=dp[k][m-1] + dp[k-1][m-1]+1<br>$$</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">dropEggs</span><span class="params">(<span class="keyword">int</span> K,<span class="keyword">int</span> N)</span></span>&#123;	<span class="comment">//K个鸡蛋，楼最高N层</span></span><br><span class="line">        <span class="keyword">int</span>[][] dp = <span class="keyword">new</span> <span class="keyword">int</span>[K+<span class="number">1</span>][N+<span class="number">1</span>];	<span class="comment">//二维数组里的length是0-start的，又因为包含层数为0或鸡蛋为0的情况，所以定义行高和列宽的时候自然要加1</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span> ; i &lt; N+<span class="number">1</span> ; i++)&#123;	<span class="comment">//先考虑K的边界</span></span><br><span class="line">            dp[<span class="number">0</span>][i] = <span class="number">0</span>;	<span class="comment">//首先是K=0的情况</span></span><br><span class="line">            dp[<span class="number">1</span>][i] = i;	<span class="comment">//然后是K=1的情况,K=1的时候，肯定是从0层往上实验</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span> ; i &lt; K+<span class="number">1</span> ; i++)&#123;	<span class="comment">//在考虑N的边界</span></span><br><span class="line">            dp[i][<span class="number">0</span>] = <span class="number">0</span>;	<span class="comment">//首先是N=0的情况</span></span><br><span class="line">            dp[i][<span class="number">1</span>] = <span class="number">1</span>;	<span class="comment">//然后是N=1的情况</span></span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">2</span>; i &lt; K+<span class="number">1</span> ; i++)&#123;	<span class="comment">//K为0和1的情况已经讨论过，所以从2开始</span></span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">2</span> ; j &lt; N+<span class="number">1</span> ; j++)&#123;</span><br><span class="line">                <span class="keyword">int</span> res = Integer.Max_VALUE;</span><br><span class="line">                <span class="keyword">for</span>(<span class="keyword">int</span> drop = <span class="number">1</span> ; drop &lt; j+<span class="number">1</span> ; drop++)&#123;  <span class="comment">//从第drop扔鸡蛋</span></span><br><span class="line">                    <span class="keyword">int</span> broken = dp [i-<span class="number">1</span>][drop-<span class="number">1</span>];	<span class="comment">//鸡蛋碎了的情况</span></span><br><span class="line">                    <span class="keyword">int</span> unbroken = dp[i][j-drop];	<span class="comment">//鸡蛋没碎的情况</span></span><br><span class="line">                    <span class="keyword">int</span> con = Math.max(broken,unbroken) + <span class="number">1</span>;</span><br><span class="line">                    res = Math.min(con,res);</span><br><span class="line">                &#125;</span><br><span class="line">                dp[i][j] = res;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> dp[K][N];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*****************************************************************************************/</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">superEggDrop</span><span class="params">(<span class="keyword">int</span> K,<span class="keyword">int</span> N)</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span>[][] dp = <span class="keyword">new</span> <span class="keyword">int</span>[K+<span class="number">1</span>][N+<span class="number">1</span>];</span><br><span class="line">    <span class="keyword">int</span> m = <span class="number">0</span> ;</span><br><span class="line">    <span class="keyword">for</span>(m = <span class="number">1</span> ; dp[K][m] &lt; N; m++)&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> k = <span class="number">1</span>; k &lt;= K ; k++)&#123;</span><br><span class="line">            dp[k][m] = dp[k][m-<span class="number">1</span>] + dp[k-<span class="number">1</span>][m-<span class="number">1</span>] + <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> m;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/08/17/LeetCode%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/08/17/LeetCode%E5%88%B7%E9%A2%98%E2%80%94%E2%80%94%E5%8F%8C%E6%8C%87%E9%92%88%EF%BC%88%E9%87%8D%E7%82%B9%EF%BC%9A%E4%BA%8C%E5%88%86%E3%80%81%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%EF%BC%89/" class="archive-article-date">
-  	<time datetime="2020-08-17T02:59:53.889Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-17</time>
-</a>
+<nav id="article-nav">
+  
+    <a href="/2020/08/17/LeetCode%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E5%9B%9E%E6%BA%AF%E7%AE%97%E6%B3%95/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          LeetCode刷题笔记——回溯算法
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/08/17/LeetCode%E5%88%B7%E9%A2%98%E2%80%94%E2%80%94%E5%8F%8C%E6%8C%87%E9%92%88%EF%BC%88%E9%87%8D%E7%82%B9%EF%BC%9A%E4%BA%8C%E5%88%86%E3%80%81%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%EF%BC%89/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">LeetCode刷题——双指针（重点：二分、滑动窗口）</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/08/17/LeetCode%E5%88%B7%E9%A2%98%E2%80%94%E2%80%94%E5%8F%8C%E6%8C%87%E9%92%88%EF%BC%88%E9%87%8D%E7%82%B9%EF%BC%9A%E4%BA%8C%E5%88%86%E3%80%81%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%EF%BC%89/">LeetCode刷题——双指针（重点：二分、滑动窗口）</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/06/30/LeetCode%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E4%BA%8C%E5%8F%89%E6%A0%91/" class="archive-article-date">
-  	<time datetime="2020-06-30T11:39:15.106Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-30</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/06/30/LeetCode%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E4%BA%8C%E5%8F%89%E6%A0%91/">LeetCode刷题笔记——二叉树</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/06/30/%E5%89%91%E6%8C%87Offer%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/" class="archive-article-date">
-  	<time datetime="2020-06-30T11:34:46.282Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-30</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/06/30/%E5%89%91%E6%8C%87Offer%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/">剑指Offer刷题笔记</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/21/BC/" class="archive-article-date">
-  	<time datetime="2020-03-21T11:49:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-21</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/21/BC/">JDBC&amp;&amp;JDBCTemplate</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Mysql</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">JDBC</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">JDBCTemplate</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/18/L%E2%80%94%E2%80%94%E4%BA%8B%E5%8A%A1%E3%80%81%E7%BA%A6%E6%9D%9F/" class="archive-article-date">
-  	<time datetime="2020-03-18T12:08:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-18</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/18/L%E2%80%94%E2%80%94%E4%BA%8B%E5%8A%A1%E3%80%81%E7%BA%A6%E6%9D%9F/">SQL——事务、约束、子查询</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">SQL</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">MySQL</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">约束</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">事务</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">子查询</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">事务隔离级别</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/18/QL%E5%9F%BA%E7%A1%80/" class="archive-article-date">
-  	<time datetime="2020-03-18T07:28:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-18</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/18/QL%E5%9F%BA%E7%A1%80/">SQL——基础</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">SQL</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">MySQL</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">基础</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/14/%E6%B8%B8%E6%88%8F%E8%AE%B0%E5%BD%95%E8%B4%B4%EF%BC%88%E5%9B%BE%E7%89%87%E4%B8%8A%E4%BC%A0%E6%B5%8B%E8%AF%95%EF%BC%89/" class="archive-article-date">
-  	<time datetime="2020-03-14T10:57:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-14</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/14/%E6%B8%B8%E6%88%8F%E8%AE%B0%E5%BD%95%E8%B4%B4%EF%BC%88%E5%9B%BE%E7%89%87%E4%B8%8A%E4%BC%A0%E6%B5%8B%E8%AF%95%EF%BC%89/">游戏记录贴（图片上传测试）</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">NinjaMustDie3</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/archives/2020/page/2/">2</a><a class="extend next" rel="next" href="/archives/2020/page/2/">Next &amp;raquo;</a>
-    </nav>
   
 
 
@@ -532,8 +575,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

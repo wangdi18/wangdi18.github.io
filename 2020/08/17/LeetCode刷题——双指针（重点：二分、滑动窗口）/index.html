@@ -6,15 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2020 | Wangdi&#39;s Blog</title>
+  <title>LeetCode刷题——双指针（重点：二分、滑动窗口） | Wangdi&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="本科毕业于电子科技大学，目前兰州大学研究生在读">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Wangdi&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/archives/2020/index.html">
+  <meta name="description" content="LeetCode刷题——双指针（重点：二分、滑动窗口）做右指针在数组中实际是指两个索引值，一般初始化为left&#x3D;0，right&#x3D;nums.length-1。常用于： 二分查找查找具体某个数时的算法框架： 123456789101112131415int binarySearch(int[] nums,int target)&amp;#123;    int left &#x3D; 0;    int right &#x3D;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="LeetCode刷题——双指针（重点：二分、滑动窗口）">
+<meta property="og:url" content="http://yoursite.com/2020/08/17/LeetCode%E5%88%B7%E9%A2%98%E2%80%94%E2%80%94%E5%8F%8C%E6%8C%87%E9%92%88%EF%BC%88%E9%87%8D%E7%82%B9%EF%BC%9A%E4%BA%8C%E5%88%86%E3%80%81%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%EF%BC%89/index.html">
 <meta property="og:site_name" content="Wangdi&#39;s Blog">
-<meta property="og:description" content="本科毕业于电子科技大学，目前兰州大学研究生在读">
+<meta property="og:description" content="LeetCode刷题——双指针（重点：二分、滑动窗口）做右指针在数组中实际是指两个索引值，一般初始化为left&#x3D;0，right&#x3D;nums.length-1。常用于： 二分查找查找具体某个数时的算法框架： 123456789101112131415int binarySearch(int[] nums,int target)&amp;#123;    int left &#x3D; 0;    int right &#x3D;">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-08-17T02:59:53.889Z">
+<meta property="article:modified_time" content="2020-08-17T03:03:14.026Z">
 <meta property="article:author" content="王迪">
 <meta name="twitter:card" content="summary">
   
@@ -140,375 +142,238 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-LeetCode刷题——双指针（重点：二分、滑动窗口）" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/08/17/LeetCode%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97(BFS)/" class="archive-article-date">
-  	<time datetime="2020-08-17T03:03:23.727Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-17</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/08/17/LeetCode%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97(BFS)/">LeetCode刷题笔记——栈和队列(BFS)</a>
+    <h1 class="article-title" itemprop="name">
+      LeetCode刷题——双指针（重点：二分、滑动窗口）
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/08/17/LeetCode%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E5%9B%9E%E6%BA%AF%E7%AE%97%E6%B3%95/" class="archive-article-date">
-  	<time datetime="2020-08-17T02:59:53.951Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-17</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/08/17/LeetCode%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E5%9B%9E%E6%BA%AF%E7%AE%97%E6%B3%95/">LeetCode刷题笔记——回溯算法</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/08/17/LeetCode%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/" class="archive-article-date">
-  	<time datetime="2020-08-17T02:59:53.914Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-17</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/08/17/LeetCode%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/">LeetCode刷题笔记——动态规划</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/08/17/LeetCode%E5%88%B7%E9%A2%98%E2%80%94%E2%80%94%E5%8F%8C%E6%8C%87%E9%92%88%EF%BC%88%E9%87%8D%E7%82%B9%EF%BC%9A%E4%BA%8C%E5%88%86%E3%80%81%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%EF%BC%89/" class="archive-article-date">
+        
+        <a href="/2020/08/17/LeetCode%E5%88%B7%E9%A2%98%E2%80%94%E2%80%94%E5%8F%8C%E6%8C%87%E9%92%88%EF%BC%88%E9%87%8D%E7%82%B9%EF%BC%9A%E4%BA%8C%E5%88%86%E3%80%81%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%EF%BC%89/" class="archive-article-date">
   	<time datetime="2020-08-17T02:59:53.889Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-17</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/08/17/LeetCode%E5%88%B7%E9%A2%98%E2%80%94%E2%80%94%E5%8F%8C%E6%8C%87%E9%92%88%EF%BC%88%E9%87%8D%E7%82%B9%EF%BC%9A%E4%BA%8C%E5%88%86%E3%80%81%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%EF%BC%89/">LeetCode刷题——双指针（重点：二分、滑动窗口）</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="LeetCode刷题——双指针（重点：二分、滑动窗口）"><a href="#LeetCode刷题——双指针（重点：二分、滑动窗口）" class="headerlink" title="LeetCode刷题——双指针（重点：二分、滑动窗口）"></a>LeetCode刷题——双指针（重点：二分、滑动窗口）</h1><p>做右指针在数组中实际是指两个索引值，一般初始化为left=0，right=nums.length-1。常用于：</p>
+<h3 id="二分查找"><a href="#二分查找" class="headerlink" title="二分查找"></a>二分查找</h3><p>查找具体某个数时的算法框架：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">binarySearch</span><span class="params">(<span class="keyword">int</span>[] nums,<span class="keyword">int</span> target)</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> left = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> right = nums.length - <span class="number">1</span>;	<span class="comment">//注意</span></span><br><span class="line">    <span class="keyword">while</span>(left &lt;= right)&#123;			<span class="comment">//注意</span></span><br><span class="line">        <span class="keyword">int</span> mid = left + (right - left) / <span class="number">2</span>;	<span class="comment">//结果同（left + right）/2，但是可以防止left和right太大直接相加导致溢出</span></span><br><span class="line">        <span class="keyword">if</span>(nums[mid] == target)&#123;</span><br><span class="line">            <span class="keyword">return</span> mid;</span><br><span class="line">        &#125;<span class="keyword">else</span> <span class="keyword">if</span>(nums[mid] &lt; target)&#123;</span><br><span class="line">            left = mid + <span class="number">1</span>;</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            right = mid - <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-        <div class="article-info info-on-right">
-          
-          
+<a id="more"></a>
 
+<p>寻找左侧边界的算法框架</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">left_bound</span><span class="params">(<span class="keyword">int</span>[] nums,<span class="keyword">int</span> target)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(nums.length == <span class="number">0</span>)&#123;</span><br><span class="line">        <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">int</span> left = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> right = nums.length; 	<span class="comment">//注意</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">while</span>(left &lt; right)&#123;		<span class="comment">//注意</span></span><br><span class="line">        <span class="keyword">int</span> mid = left + (right - left) / <span class="number">2</span>;</span><br><span class="line">        <span class="keyword">if</span>(nums[mid] == target)&#123;</span><br><span class="line">            right = mid;</span><br><span class="line">        &#125;<span class="keyword">else</span> <span class="keyword">if</span>(nums[mid] &lt; target)&#123;</span><br><span class="line">            left = mid + <span class="number">1</span>;</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            right = mid;	<span class="comment">//注意</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> left;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>寻找右侧边界的算法框架</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">right_bound</span><span class="params">(<span class="keyword">int</span>[] nums, <span class="keyword">int</span> target)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(nums.length == <span class="number">0</span>)&#123;</span><br><span class="line">        <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">int</span> left = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> right = nums.length;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">while</span>(left &lt; right)&#123;</span><br><span class="line">        <span class="keyword">int</span> mid = left + (right - left) / <span class="number">2</span>;</span><br><span class="line">        <span class="keyword">if</span>(nums[mid] == target)&#123;</span><br><span class="line">            left = mid + <span class="number">1</span>;</span><br><span class="line">        &#125;<span class="keyword">else</span> <span class="keyword">if</span>(nums[mid] &lt; target)&#123;</span><br><span class="line">            left = mid + <span class="number">1</span>;</span><br><span class="line">        &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">            right = mid;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> left - <span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="练习"><a href="#练习" class="headerlink" title="练习"></a>练习</h4><p>1.给定一个 n 个元素有序的（升序）整型数组 nums 和一个目标值 target  ，写一个函数搜索 nums 中的 target，如果目标值存在返回下标，否则返回 -1。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">search</span><span class="params">(<span class="keyword">int</span>[] nums, <span class="keyword">int</span> target)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(nums == <span class="keyword">null</span> || nums.length == <span class="number">0</span>)&#123;</span><br><span class="line">            <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> left = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> right = nums.length - <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">while</span>(left &lt;=right)&#123;</span><br><span class="line">            <span class="keyword">int</span> mid = left + (right - left) / <span class="number">2</span>;	<span class="comment">//结果同（left + right）/2，但是可以防止left和right太大直接相加导致溢出</span></span><br><span class="line">            <span class="keyword">if</span>(nums[mid] == target)&#123;</span><br><span class="line">                <span class="keyword">return</span> mid;</span><br><span class="line">            &#125;<span class="keyword">else</span> <span class="keyword">if</span>(nums[mid] &lt; target)&#123;</span><br><span class="line">                left = mid + <span class="number">1</span>;</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                right = mid - <span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>2.给定一个排序数组和一个目标值，在数组中找到目标值，并返回其索引。如果目标值不存在于数组中，返回它将会被按顺序插入的位置。你可以假设数组中无重复元素。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">searchInsert</span><span class="params">(<span class="keyword">int</span>[] nums, <span class="keyword">int</span> target)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(nums == <span class="keyword">null</span>)&#123;</span><br><span class="line">            <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> left = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> right = nums.length - <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">while</span>(left &lt;= right)&#123;</span><br><span class="line">            <span class="keyword">int</span> mid = left + (right - left ) / <span class="number">2</span>;</span><br><span class="line">            <span class="keyword">if</span>(nums[mid] == target)&#123;</span><br><span class="line">                <span class="keyword">return</span> mid;</span><br><span class="line">            &#125;<span class="keyword">else</span> <span class="keyword">if</span>(nums[mid] &lt; target)&#123;</span><br><span class="line">                left = mid + <span class="number">1</span>;</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                right = mid -<span class="number">1</span> ;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> left;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>3.编写一个高效的算法来判断 m x n 矩阵中，是否存在一个目标值。该矩阵具有如下特性：</p>
+<p>每行中的整数从左到右按升序排列。<br>每行的第一个整数大于前一行的最后一个整数。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//m*n的矩阵转为m*n的一维数组，用二分法查找，行下标为mid/列长，列下标为mid%列长</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">searchMatrix</span><span class="params">(<span class="keyword">int</span>[][] matrix, <span class="keyword">int</span> target)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> m = matrix.length;</span><br><span class="line">        <span class="keyword">if</span>(m == <span class="number">0</span>)&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> n = matrix[<span class="number">0</span>].length;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> left = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> right = m * n - <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">while</span>(left &lt;= right)&#123;</span><br><span class="line">            <span class="keyword">int</span> mid = left + (right - left) / <span class="number">2</span>;</span><br><span class="line">            <span class="keyword">if</span>(matrix[mid / n][mid % n] == target)&#123;</span><br><span class="line">                <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">            &#125;<span class="keyword">else</span> <span class="keyword">if</span>(matrix[mid / n][mid % n] &lt; target)&#123;</span><br><span class="line">                left = mid + <span class="number">1</span>;</span><br><span class="line">            &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">                right = mid - <span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>3.你是产品经理，目前正在带领一个团队开发新的产品。不幸的是，你的产品的最新版本没有通过质量检测。由于每个版本都是基于之前的版本开发的，所以错误的版本之后的所有版本都是错的。</p>
+<p>假设你有 n 个版本 [1, 2, …, n]，你想找出导致之后所有版本出错的第一个错误的版本。</p>
+<p>你可以通过调用 bool isBadVersion(version) 接口来判断版本号 version 是否在单元测试中出错。实现一个函数来查找第一个错误的版本。你应该尽量减少对调用 API 的次数。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* The isBadVersion API is defined in the parent class VersionControl.</span></span><br><span class="line"><span class="comment">      boolean isBadVersion(int version); */</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> <span class="keyword">extends</span> <span class="title">VersionControl</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">firstBadVersion</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> left = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">int</span> right = n ;</span><br><span class="line">        <span class="keyword">while</span>(left &lt; right)&#123;</span><br><span class="line">            <span class="keyword">int</span> mid = left + (right - left) / <span class="number">2</span>;</span><br><span class="line">            <span class="keyword">if</span>(isBadVersion(mid))&#123;</span><br><span class="line">                right = mid;</span><br><span class="line">            &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">                left = mid + <span class="number">1</span>;;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> left;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>4.假设按照升序排序的数组在预先未知的某个点上进行了旋转。( 例如，数组 [0,1,2,4,5,6,7] 可能变为 [4,5,6,7,0,1,2] )。请找出其中最小的元素。你可以假设数组中不存在重复元素。</p>
+<p>示例：<br>输入：[3,4,5,1,2]                                                输入： [4,5,6,7,0,1,2]<br>输出：1                                                              输出：0</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//用二分查找，需要将最小值套住，并不断收缩左边界或右边界，如果中值 &lt; 右值 ，则最小值在左半边，收缩右边界；如果中值 &gt; 右值，则最小值在右半边，可以收缩左边界</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">findMin</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> left = <span class="number">0</span> ;</span><br><span class="line">        <span class="keyword">int</span> right = nums.length - <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">while</span>(left &lt; right)&#123;</span><br><span class="line">            <span class="keyword">int</span> mid = left + (right - left) / <span class="number">2</span>;</span><br><span class="line">            <span class="keyword">if</span>(nums[mid] &gt; nums[right])&#123;</span><br><span class="line">                left = mid + <span class="number">1</span>;</span><br><span class="line">            &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">                right = mid;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> nums[left];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>5.假设按照升序排序的数组在预先未知的某个点上进行了旋转。( 例如，数组 [0,1,2,4,5,6,7] 可能变为 [4,5,6,7,0,1,2] )。请找出其中最小的元素。注意数组中可能存在重复的元素。</p>
+<p>示例：<br>输入：[2,2,2,0,1]                输入：[1,3,5]                输入：[3,3,1,3]<br>输出：0                              输出：1                        输出：1</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//大致思路同上题，但需要考虑一种特殊情况：中值 == 右值。此时我们并不能判断最小值在左边还是在最右边，为了缩小查找范围，最安全的办法是将右边界指针 - 1（可以有效笔免死循环，同时保证永远不跳过最小元素，当左边界指针自增可能会错过最小值，比如[1,3,3]）</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">findMin</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> left = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> right = nums.length - <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">while</span>(left &lt; right)&#123;</span><br><span class="line">            <span class="keyword">int</span> mid = left + (right - left ) / <span class="number">2</span>;</span><br><span class="line">            <span class="keyword">if</span>(nums[mid] &gt; nums[right])&#123;</span><br><span class="line">                left = mid + <span class="number">1</span>;</span><br><span class="line">            &#125;<span class="keyword">else</span> <span class="keyword">if</span>(nums[mid] &lt; nums[right])&#123;</span><br><span class="line">                right = mid;</span><br><span class="line">            &#125;<span class="keyword">else</span> &#123;				<span class="comment">//特殊情况： nums[mid] == nums[right], 将right自减</span></span><br><span class="line">                right--;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> nums[left];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>6.假设按照升序排序的数组在预先未知的某个点上进行了旋转。( 例如，数组 [0,1,2,4,5,6,7] 可能变为 [4,5,6,7,0,1,2] )。搜索一个给定的目标值，如果数组中存在这个目标值，则返回它的索引，否则返回 -1 。你可以假设数组中不存在重复的元素。你的算法时间复杂度必须是 O(log n) 级别。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">search</span><span class="params">(<span class="keyword">int</span>[] nums, <span class="keyword">int</span> target)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> left = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> right = nums.length -<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">while</span>(left &lt;= right)&#123;</span><br><span class="line">            <span class="keyword">int</span> mid = left + (right - left) / <span class="number">2</span>;</span><br><span class="line">            <span class="keyword">if</span>(nums[mid] == target)&#123;</span><br><span class="line">                <span class="keyword">return</span> mid;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>(nums[mid] &gt;= nums[left])&#123;	<span class="comment">//先根据nums[mid]与nums[left]的关系判断mid实在左段还是右段</span></span><br><span class="line">                <span class="keyword">if</span>(target &gt;= nums[left] &amp;&amp; target &lt; nums[mid])&#123;	<span class="comment">//再根据target是在mid的左边还是右边，从而调整左右边界</span></span><br><span class="line">                    right = mid - <span class="number">1</span>;</span><br><span class="line">                &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                    left = mid + <span class="number">1</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                <span class="keyword">if</span>(target &gt; nums[mid] &amp;&amp; target &lt;= nums[right])&#123;</span><br><span class="line">                    left = mid + <span class="number">1</span>;</span><br><span class="line">                &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                    right = mid - <span class="number">1</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>7.假设按照升序排序的数组在预先未知的某个点上进行了旋转。( 例如，数组 [0,0,1,2,2,5,6] 可能变为 [2,5,6,0,0,1,2] )。编写一个函数来判断给定的目标值是否存在于数组中。若存在返回 true，否则返回 false。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//具体思路同上题，但需要考虑当nums[mid] == nums[left] 的情况，分不清左部有序还是右部有序，此时left++即可</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">search</span><span class="params">(<span class="keyword">int</span>[] nums, <span class="keyword">int</span> target)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> left = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> right = nums.length -<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">while</span>(left &lt;= right)&#123;</span><br><span class="line">            <span class="keyword">int</span> mid = left + (right - left) / <span class="number">2</span>;</span><br><span class="line">            <span class="keyword">if</span>(nums[mid] == target)&#123;</span><br><span class="line">                <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>(nums[left] == nums[mid])&#123;</span><br><span class="line">                left++;</span><br><span class="line">                <span class="keyword">continue</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>(nums[mid] &gt;= nums[left])&#123;</span><br><span class="line">                <span class="keyword">if</span>(target &gt;= nums[left] &amp;&amp; target &lt; nums[mid])&#123;</span><br><span class="line">                    right = mid - <span class="number">1</span>;</span><br><span class="line">                &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                    left = mid + <span class="number">1</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                <span class="keyword">if</span>(target &gt; nums[mid] &amp;&amp; target &lt;= nums[right])&#123;</span><br><span class="line">                    left = mid + <span class="number">1</span>;</span><br><span class="line">                &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                    right = mid - <span class="number">1</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="两数之和"><a href="#两数之和" class="headerlink" title="两数之和"></a>两数之和</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//给定一个已按照升序排列 的有序数组，找到两个数使得它们相加之和等于目标数。函数应该返回这两个下标值 index1 和 index2，其中 index1 必须小于 index2。</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span>[] twoSum(<span class="keyword">int</span>[] numbers, <span class="keyword">int</span> target) &#123;</span><br><span class="line">        <span class="keyword">int</span> left = <span class="number">0</span> ;</span><br><span class="line">        <span class="keyword">int</span> right = numbers.length - <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">while</span>(left &lt; right)&#123;</span><br><span class="line">            <span class="keyword">int</span> sum = numbers[left] + numbers[right];</span><br><span class="line">            <span class="keyword">if</span>(sum == target)&#123;</span><br><span class="line">                <span class="keyword">return</span> <span class="keyword">new</span> <span class="keyword">int</span>[]&#123;left+<span class="number">1</span>,right+<span class="number">1</span>&#125;;</span><br><span class="line">            &#125;<span class="keyword">else</span> <span class="keyword">if</span>(sum &lt; target)&#123;</span><br><span class="line">                left++;</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                right--;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="keyword">int</span>[]&#123;-<span class="number">1</span>,-<span class="number">1</span>&#125;;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="反转数组"><a href="#反转数组" class="headerlink" title="反转数组"></a>反转数组</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">reverse</span><span class="params">(<span class="keyword">int</span>[] nums)</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> left = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> right = nums.length - <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">while</span>(left &lt; right)&#123;</span><br><span class="line">        <span class="keyword">int</span> temp = nums[left];</span><br><span class="line">        nums[left] = nums[right];</span><br><span class="line">        nums[right] = temp;</span><br><span class="line">        left++;</span><br><span class="line">        right++;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="滑动窗口算法"><a href="#滑动窗口算法" class="headerlink" title="滑动窗口算法"></a>滑动窗口算法</h3><p>维持一个窗口，不断滑动（左右两端方向一致的向前滑动：右端固定，左端滑动或者左端固定，右端滑动），然后更新答案。适用范围一般是列表或者字符串，用来求最大长度、最短长度、或者子序列</p>
+<h4 id="算法思想"><a href="#算法思想" class="headerlink" title="算法思想"></a>算法思想</h4><p>1.在序列中使用双指针，初始化left = right = 0，把索引闭区间[left, right] 称为一个窗口<br>2.先不断地增加right指针扩大窗口[left,right]，直到窗口中的序列符合要求<br>3.此时，停止增加right，转而不断增加left指针缩小窗口[left,right]，直到窗口中的序列不再符合要求。同时，每次增加left前，都要更新一轮结果<br>4.重复2、3步，直到right到达序列的尽头</p>
+<p>简单理解：第二步相当于寻找一个可行解，然后第三步优化这个可行解，最终找到最优解，做右指针轮流前进，窗口大小增增减减，窗口不断向右滑动</p>
+<h4 id="算法框架："><a href="#算法框架：" class="headerlink" title="算法框架："></a>算法框架：</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">slidingWindow</span><span class="params">(<span class="built_in">string</span> s, stirng t)</span></span>&#123;</span><br><span class="line">    unorderde_map&lt;<span class="keyword">char</span>,<span class="keyword">int</span>&gt; need,window;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">char</span> c : t) need[c]++;</span><br><span class="line">    <span class="keyword">int</span> left = <span class="number">0</span>,right = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> valid = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span>(right &lt; s.<span class="built_in">size</span>())&#123;</span><br><span class="line">        <span class="comment">//c是将移入窗口的字符</span></span><br><span class="line">        <span class="keyword">char</span> c = s[right];</span><br><span class="line">        <span class="comment">//右移窗口</span></span><br><span class="line">        right++;</span><br><span class="line">        <span class="comment">//进行窗口内数据的一系列更新</span></span><br><span class="line">        ...</span><br><span class="line">            </span><br><span class="line">        <span class="comment">/*** debug 输出的位置 ***/</span></span><br><span class="line">        <span class="built_in">print</span>(<span class="string">"window: [%d, %d)\n"</span>,left,right);</span><br><span class="line">        <span class="comment">/*******************************/</span></span><br><span class="line">        </span><br><span class="line">        <span class="comment">//判断左侧窗口是否要收缩</span></span><br><span class="line">        <span class="keyword">while</span>(window needs shrink)&#123;</span><br><span class="line">            <span class="comment">//d是将移出窗口的字符</span></span><br><span class="line">            <span class="keyword">char</span> d = s[left];</span><br><span class="line">            <span class="comment">//左移窗口</span></span><br><span class="line">            left++;</span><br><span class="line">            <span class="comment">//进行窗口内数据的一系列更新</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="练习-1"><a href="#练习-1" class="headerlink" title="练习"></a>练习</h4><p>1.给你一个字符串 S、一个字符串 T，请在字符串 S 里面找出：包含 T 所有字符的最小子串。</p>
+<p>示例：<br>输入：S = “ADOBECODEBANC”, T = “ABC”<br>输出：”BANC”</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">minWindow</span><span class="params">(String s, String t)</span> </span>&#123;</span><br><span class="line">        String res = <span class="string">""</span>;</span><br><span class="line">        <span class="keyword">if</span>(s == <span class="keyword">null</span> || t == <span class="keyword">null</span> || s.length() &lt; t.length())&#123;</span><br><span class="line">            <span class="keyword">return</span> res;</span><br><span class="line">        &#125;   </span><br><span class="line">        <span class="keyword">int</span>[] need = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">128</span>];  <span class="comment">//用来统计t中每个字符出现次数</span></span><br><span class="line">        <span class="keyword">int</span>[] window = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">128</span>];    <span class="comment">//用来统计滑动窗口中每个字符出现次数</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span> ; i &lt; t.length() ; i++)&#123;</span><br><span class="line">            need[t.charAt(i)]++;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> left = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> right = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> count = <span class="number">0</span>;  <span class="comment">//目前有多少个字符</span></span><br><span class="line">        <span class="keyword">int</span> minLength = s.length() + <span class="number">1</span>; <span class="comment">//用来记录最短需要多少个字符。</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">while</span>(right &lt; s.length())&#123;</span><br><span class="line">            <span class="keyword">char</span> c = s.charAt(right);</span><br><span class="line">            window[c]++;</span><br><span class="line">            <span class="keyword">if</span>(need[c] &gt; <span class="number">0</span> &amp;&amp; need[c] &gt;= window[c])&#123;</span><br><span class="line">                count++;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">while</span>(count == t.length())&#123; <span class="comment">//移动到不满足条件为止</span></span><br><span class="line">                <span class="keyword">char</span> d = s.charAt(left);</span><br><span class="line">                <span class="keyword">if</span>(need[d] &gt; <span class="number">0</span> &amp;&amp; need[d] &gt;= window[d])&#123;</span><br><span class="line">                    count--;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">if</span>(right - left + <span class="number">1</span> &lt;minLength)&#123;</span><br><span class="line">                    minLength = right - left + <span class="number">1</span>;</span><br><span class="line">                    res = s.substring(left,right+<span class="number">1</span>);</span><br><span class="line">                &#125;</span><br><span class="line">                window[d]--;</span><br><span class="line">                left++;</span><br><span class="line">            &#125;</span><br><span class="line">            right++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>2.给定两个字符串 <strong>s1</strong> 和 <strong>s2</strong>，写一个函数来判断 <strong>s2</strong> 是否包含 <strong>s1</strong> 的排列。换句话说，第一个字符串的排列之一是第二个字符串的子串。</p>
+<p>示例：<br>输入：s1 = “ab” s2 = “eidbaooo”                    输入：s1= “ab” s2 = “eidboaoo”<br>输出：True                                                     输出：False</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">checkInclusion</span><span class="params">(String s1, String s2)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(s1 == <span class="keyword">null</span> || s2.length() &lt; s1.length())&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span>[] need = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">128</span>];</span><br><span class="line">        <span class="keyword">int</span>[] window = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">128</span>];</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span> ; i &lt; s1.length() ; i++)&#123;</span><br><span class="line">            need[s1.charAt(i)]++;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> left = <span class="number">0</span>; </span><br><span class="line">        <span class="keyword">int</span> right = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> count = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> tcount = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span> ; i &lt; need.length ; i++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(need[i] &gt; <span class="number">0</span>)&#123;</span><br><span class="line">                tcount++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">while</span>(right &lt; s2.length())&#123;</span><br><span class="line">            <span class="keyword">char</span> c = s2.charAt(right);</span><br><span class="line">            right++;</span><br><span class="line">            <span class="keyword">if</span>(need[c] &gt; <span class="number">0</span>)&#123;</span><br><span class="line">                window[c]++;</span><br><span class="line">                <span class="keyword">if</span>(need[c] == window[c])&#123;</span><br><span class="line">                    count++;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">while</span>(right - left &gt;=s1.length())&#123;</span><br><span class="line">                <span class="keyword">if</span>(tcount == count)&#123;</span><br><span class="line">                    <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">char</span> d = s2.charAt(left);</span><br><span class="line">                left++;</span><br><span class="line">                <span class="keyword">if</span>(need[d] &gt;<span class="number">0</span>)&#123;</span><br><span class="line">                    <span class="keyword">if</span>(need[d] == window[d])&#123;</span><br><span class="line">                        count--;</span><br><span class="line">                    &#125;</span><br><span class="line">                    window[d]--;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>3.给定一个字符串 s 和一个非空字符串 p，找到 s 中所有是 p 的字母异位词的子串，返回这些子串的起始索引。字符串只包含小写英文字母，并且字符串 s 和 p 的长度都不超过 20100。</p>
+<p>示例：<br>输入：s: “cbaebabacd” p: “abc”                     输入：s: “abab” p: “ab”<br>输出：[0, 6]                                                    输出：[0, 1, 2]</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> List&lt;Integer&gt; <span class="title">findAnagrams</span><span class="params">(String s, String p)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">char</span>[] arrS = s.toCharArray();</span><br><span class="line">        <span class="keyword">char</span>[] arrP = p.toCharArray();</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// 接收最后返回的结果</span></span><br><span class="line">        List&lt;Integer&gt; ans = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// 定义一个 needs 数组来看 arrP 中包含元素的个数</span></span><br><span class="line">        <span class="keyword">int</span>[] needs = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">26</span>];</span><br><span class="line">        <span class="comment">// 定义一个 window 数组来看滑动窗口中是否有 arrP 中的元素，并记录出现的个数</span></span><br><span class="line">        <span class="keyword">int</span>[] window = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">26</span>]; </span><br><span class="line">        </span><br><span class="line">        <span class="comment">// 先将 arrP 中的元素保存到 needs 数组中</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; arrP.length; i++) &#123;</span><br><span class="line">            needs[arrP[i] - <span class="string">'a'</span>] += <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// 定义滑动窗口的两端</span></span><br><span class="line">        <span class="keyword">int</span> left = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> right = <span class="number">0</span>;</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// 右窗口开始不断向右移动</span></span><br><span class="line">        <span class="keyword">while</span> (right &lt; arrS.length) &#123;</span><br><span class="line">            <span class="keyword">int</span> curR = arrS[right] - <span class="string">'a'</span>;</span><br><span class="line">            right++;</span><br><span class="line">            <span class="comment">// 将右窗口当前访问到的元素 curR 个数加 1 </span></span><br><span class="line">            window[curR] += <span class="number">1</span>;</span><br><span class="line">            </span><br><span class="line">            <span class="comment">// 当 window 数组中 curR 比 needs 数组中对应元素的个数要多的时候就该移动左窗口指针 </span></span><br><span class="line">            <span class="keyword">while</span> (window[curR] &gt; needs[curR]) &#123;</span><br><span class="line">                <span class="keyword">int</span> curL = arrS[left] - <span class="string">'a'</span>;</span><br><span class="line">                left++;</span><br><span class="line">                <span class="comment">// 将左窗口当前访问到的元素 curL 个数减 1 </span></span><br><span class="line">                window[curL] -= <span class="number">1</span>;            </span><br><span class="line">            &#125;</span><br><span class="line">            </span><br><span class="line">            <span class="comment">// 这里将所有符合要求的左窗口索引放入到了接收结果的 List 中</span></span><br><span class="line">            <span class="keyword">if</span> (right - left == arrP.length) &#123;</span><br><span class="line">                ans.add(left);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>4.给定一个字符串，请你找出其中不含有重复字符的 <strong>最长子串</strong> 的长度。</p>
+<p>示例：<br>输入：”abcabcbb”                    输入：”bbbbb”                输入：”pwwkew”<br>输出：3                                    输出：1                           输出：3</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//滑动窗口，只不过左指针不是一步一步滑，而是当出现重复元素时，将左指针移动到重复的后一个位置上</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">lengthOfLongestSubstring</span><span class="params">(String s)</span> </span>&#123;</span><br><span class="line">        Map&lt;Character,Integer&gt; map = <span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">        <span class="keyword">int</span> ans = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> end = <span class="number">0</span>,start = <span class="number">0</span>; end &lt; s.length() ; end++)&#123;</span><br><span class="line">            <span class="keyword">char</span> c = s.charAt(end);</span><br><span class="line">            <span class="keyword">if</span>(map.containsKey(c))&#123;</span><br><span class="line">                start = Math.max(map.get(c),start);</span><br><span class="line">            &#125;</span><br><span class="line">            ans = Math.max(ans,end-start+<span class="number">1</span>);</span><br><span class="line">            map.put(s.charAt(end),end + <span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*******************************************************************************************/</span></span><br><span class="line"><span class="comment">//同下</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">lengthOfLongestSubstring</span><span class="params">(String s)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> left = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> right = <span class="number">0</span>;</span><br><span class="line">        Map&lt;Character,Integer&gt; window = <span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">        <span class="keyword">int</span> res = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">while</span>(right &lt; s.length())&#123;</span><br><span class="line">            <span class="keyword">char</span> c = s.charAt(right);</span><br><span class="line">            window.put(c,window.getOrDefault(c,<span class="number">0</span>)+<span class="number">1</span>);</span><br><span class="line">            right++;</span><br><span class="line">            <span class="keyword">while</span>(window.get(c) &gt; <span class="number">1</span>)&#123;</span><br><span class="line">                <span class="keyword">char</span> d = s.charAt(left);</span><br><span class="line">                window.put(d,window.get(d) - <span class="number">1</span>);</span><br><span class="line">                left++;</span><br><span class="line">            &#125;</span><br><span class="line">            res = Math.max(res,right - left);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/08/17/LeetCode%E5%88%B7%E9%A2%98%E2%80%94%E2%80%94%E5%8F%8C%E6%8C%87%E9%92%88%EF%BC%88%E9%87%8D%E7%82%B9%EF%BC%9A%E4%BA%8C%E5%88%86%E3%80%81%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%EF%BC%89/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/06/30/LeetCode%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E4%BA%8C%E5%8F%89%E6%A0%91/" class="archive-article-date">
-  	<time datetime="2020-06-30T11:39:15.106Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-30</time>
-</a>
+<nav id="article-nav">
+  
+    <a href="/2020/08/17/LeetCode%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          LeetCode刷题笔记——动态规划
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/06/30/LeetCode%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E4%BA%8C%E5%8F%89%E6%A0%91/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">LeetCode刷题笔记——二叉树</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/06/30/LeetCode%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E4%BA%8C%E5%8F%89%E6%A0%91/">LeetCode刷题笔记——二叉树</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/06/30/%E5%89%91%E6%8C%87Offer%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/" class="archive-article-date">
-  	<time datetime="2020-06-30T11:34:46.282Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-30</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/06/30/%E5%89%91%E6%8C%87Offer%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/">剑指Offer刷题笔记</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/21/BC/" class="archive-article-date">
-  	<time datetime="2020-03-21T11:49:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-21</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/21/BC/">JDBC&amp;&amp;JDBCTemplate</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Mysql</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">JDBC</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">JDBCTemplate</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/18/L%E2%80%94%E2%80%94%E4%BA%8B%E5%8A%A1%E3%80%81%E7%BA%A6%E6%9D%9F/" class="archive-article-date">
-  	<time datetime="2020-03-18T12:08:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-18</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/18/L%E2%80%94%E2%80%94%E4%BA%8B%E5%8A%A1%E3%80%81%E7%BA%A6%E6%9D%9F/">SQL——事务、约束、子查询</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">SQL</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">MySQL</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">约束</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">事务</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">子查询</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">事务隔离级别</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/18/QL%E5%9F%BA%E7%A1%80/" class="archive-article-date">
-  	<time datetime="2020-03-18T07:28:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-18</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/18/QL%E5%9F%BA%E7%A1%80/">SQL——基础</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">SQL</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">MySQL</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">基础</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/14/%E6%B8%B8%E6%88%8F%E8%AE%B0%E5%BD%95%E8%B4%B4%EF%BC%88%E5%9B%BE%E7%89%87%E4%B8%8A%E4%BC%A0%E6%B5%8B%E8%AF%95%EF%BC%89/" class="archive-article-date">
-  	<time datetime="2020-03-14T10:57:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-14</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/14/%E6%B8%B8%E6%88%8F%E8%AE%B0%E5%BD%95%E8%B4%B4%EF%BC%88%E5%9B%BE%E7%89%87%E4%B8%8A%E4%BC%A0%E6%B5%8B%E8%AF%95%EF%BC%89/">游戏记录贴（图片上传测试）</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">NinjaMustDie3</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/archives/2020/page/2/">2</a><a class="extend next" rel="next" href="/archives/2020/page/2/">Next &amp;raquo;</a>
-    </nav>
   
 
 
@@ -532,8 +397,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

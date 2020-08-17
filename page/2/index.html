@@ -142,6 +142,442 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-sta安装以及制作Docker镜像" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/03/14/sta%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E5%88%B6%E4%BD%9CDocker%E9%95%9C%E5%83%8F/">Siesta安装、优化安装以及配置Docker镜像</a>
+    </h1>
+  
+
+        
+        <a href="/2020/03/14/sta%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E5%88%B6%E4%BD%9CDocker%E9%95%9C%E5%83%8F/" class="archive-article-date">
+  	<time datetime="2020-03-14T06:41:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-14</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="正常安装"><a href="#正常安装" class="headerlink" title="正常安装"></a>正常安装</h2><h3 id="1依赖环境"><a href="#1依赖环境" class="headerlink" title="1依赖环境"></a>1依赖环境</h3><ul>
+<li>GCC</li>
+<li>OpenMPI</li>
+<li>数学库（BLAS、LAPACK、ScaLAPACK\BLACS）</li>
+</ul>
+<h3 id="2-1-GCC安装"><a href="#2-1-GCC安装" class="headerlink" title="2.1 GCC安装"></a>2.1 GCC安装</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">yum install gcc</span><br><span class="line">yum install gcc-g++</span><br><span class="line">yum install gcc-gfortran</span><br></pre></td></tr></table></figure>
+
+<p>查看是否安装成功以及版本</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">[root@build scalapack-2.0.2]# gcc --version</span><br><span class="line">gcc (GCC) 8.3.1 20190507 (Red Hat 8.3.1-4)</span><br><span class="line">Copyright (C) 2018 Free Software Foundation, Inc.</span><br><span class="line">[root@build scalapack-2.0.2]# g++ --version</span><br><span class="line">g++ (GCC) 8.3.1 20190507 (Red Hat 8.3.1-4)</span><br><span class="line">Copyright (C) 2018 Free Software Foundation, Inc.</span><br><span class="line">[root@build scalapack-2.0.2]# gfortran --version</span><br><span class="line">GNU Fortran (GCC) 8.3.1 20190507 (Red Hat 8.3.1-4)</span><br><span class="line">Copyright (C) 2018 Free Software Foundation, Inc.</span><br></pre></td></tr></table></figure>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Docker</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">siesta</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/03/14/sta%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E5%88%B6%E4%BD%9CDocker%E9%95%9C%E5%83%8F/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-tellij-IDEA常用快捷键" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/03/09/tellij-IDEA%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/">Intellij IDEA常用快捷键</a>
+    </h1>
+  
+
+        
+        <a href="/2020/03/09/tellij-IDEA%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/" class="archive-article-date">
+  	<time datetime="2020-03-09T08:55:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-09</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>IDEA是一个专门针对Java的集成开发工具（IDE），由Java编写。所以，需要有JRE运行环境并配置好环境变量，它可以极大的提升我们的开发效率。</p>
+<table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th align="center">功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Alt + Enter</td>
+<td align="center">导入包、自动修正代码</td>
+</tr>
+<tr>
+<td>Ctrl + Y</td>
+<td align="center">删除光标所在行</td>
+</tr>
+<tr>
+<td>Ctrl + D</td>
+<td align="center">复制光标所在行的内容，插入光标位置下面</td>
+</tr>
+<tr>
+<td>Ctrl + W</td>
+<td align="center">自动选中代码</td>
+</tr>
+<tr>
+<td>Ctrl + G</td>
+<td align="center">跳转到指定行</td>
+</tr>
+<tr>
+<td>Ctrl + N</td>
+<td align="center">查找类</td>
+</tr>
+<tr>
+<td>Ctrl + R</td>
+<td align="center">替换</td>
+</tr>
+<tr>
+<td>Ctrl + O</td>
+<td align="center">重写父类方法</td>
+</tr>
+<tr>
+<td>Ctrl + Alt + L</td>
+<td align="center">格式化代码（规范化）</td>
+</tr>
+<tr>
+<td>Ctrl + /</td>
+<td align="center">单行注释，再按取消注释</td>
+</tr>
+<tr>
+<td>Ctrl + Shift + /</td>
+<td align="center">选中代码注释，多行注释，再按取消注释</td>
+</tr>
+<tr>
+<td>Alt + Insert</td>
+<td align="center">自动生成代码，toString、get、set等方法</td>
+</tr>
+<tr>
+<td>Alt + Shift + Enter</td>
+<td align="center">补全结尾</td>
+</tr>
+<tr>
+<td>Alt + Shift + 上下箭头</td>
+<td align="center">移动当前代码行</td>
+</tr>
+<tr>
+<td>Alt  + 上下箭头</td>
+<td align="center">移动光标到上\下一个方法</td>
+</tr>
+<tr>
+<td>Ctrl + Z</td>
+<td align="center">撤销当前操作</td>
+</tr>
+<tr>
+<td>Ctrl + Shift + Z</td>
+<td align="center">取消撤销当前操作</td>
+</tr>
+<tr>
+<td>Alt + /</td>
+<td align="center">补全代码（自己设置的）</td>
+</tr>
+<tr>
+<td>Ctrl + Alt + T</td>
+<td align="center">把选中的代码放入if等语句里</td>
+</tr>
+<tr>
+<td>Ctrl + Alt + M</td>
+<td align="center">快速抽取为新方法</td>
+</tr>
+<tr>
+<td>Alt + 4</td>
+<td align="center">显示（隐藏）结果窗口</td>
+</tr>
+<tr>
+<td>psvm(public static void main首字母缩写)</td>
+<td align="center">生成main方法（public static void main(String[] args){}）</td>
+</tr>
+<tr>
+<td>sout(System的首字母s+out)</td>
+<td align="center">生成输出语句（System.out.println()）</td>
+</tr>
+<tr>
+<td>fori</td>
+<td align="center">自动生成for循环        for(int i = 0 ; i &lt; ; i++){}</td>
+</tr>
+</tbody></table>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">IDEA</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">快捷键</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/03/09/tellij-IDEA%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-ava-注解" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/03/09/ava-%E6%B3%A8%E8%A7%A3/">Java--注解</a>
+    </h1>
+  
+
+        
+        <a href="/2020/03/09/ava-%E6%B3%A8%E8%A7%A3/" class="archive-article-date">
+  	<time datetime="2020-03-09T08:18:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-09</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h2><p>注解也叫元数据，说明程序的（代码级别的说明），给计算机看的。</p>
+<p>注释：用文字描述程序，给程序员看的</p>
+<h2 id="作用分类"><a href="#作用分类" class="headerlink" title="作用分类"></a>作用分类</h2><ul>
+<li>编写文档：通过代码里标识的元数据（注解）生成文档（API文档）</li>
+<li>代码分析：通过代码里的标识的元数据（注解）对代码进行分析</li>
+<li>编译检查：通过代码里标识的元数据（注解）让编译器能够实现基本的编译检查（Override）</li>
+</ul>
+<h2 id="使用注解："><a href="#使用注解：" class="headerlink" title="使用注解："></a>使用注解：</h2><p>@注解名称</p>
+<h2 id="JDK中预定义的一些注解"><a href="#JDK中预定义的一些注解" class="headerlink" title="JDK中预定义的一些注解"></a>JDK中预定义的一些注解</h2><ul>
+<li>@Override：检测被该注解标注的方法是否是继承自父类（接口）的</li>
+<li>@Deprecated：该注解标注的内容，表示已过时
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">注解</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/03/09/ava-%E6%B3%A8%E8%A7%A3/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-t总结" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/03/02/t%E6%80%BB%E7%BB%93/">Git最常用操作</a>
+    </h1>
+  
+
+        
+        <a href="/2020/03/02/t%E6%80%BB%E7%BB%93/" class="archive-article-date">
+  	<time datetime="2020-03-02T12:06:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-02</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="一、创建与合并分支"><a href="#一、创建与合并分支" class="headerlink" title="一、创建与合并分支"></a>一、创建与合并分支</h1><h6 id="1-从master分支创建dev分支并切换到dev分支"><a href="#1-从master分支创建dev分支并切换到dev分支" class="headerlink" title="1.从master分支创建dev分支并切换到dev分支"></a>1.从master分支创建dev分支并切换到dev分支</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git checkout master</span><br><span class="line">git checkout -b dev</span><br></pre></td></tr></table></figure>
+<p>其中，git checkout -b dev 等价于:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git branch dev</span><br><span class="line">git checkout dev</span><br></pre></td></tr></table></figure>
+
+<p><code>git branch</code> 查看本地当前的分支，分支前面带“*”表示当前分支，剩下的分支表示本地有的分支。<br><code>git  branch -a</code> 查看远程全部的分支，白色的表示本地有的，红色的表示本地没有，仅在远程存在。</p>
+<h6 id="2-修改代码、提交代码（当前的操作是在dev分支上进行）"><a href="#2-修改代码、提交代码（当前的操作是在dev分支上进行）" class="headerlink" title="2.修改代码、提交代码（当前的操作是在dev分支上进行）"></a>2.修改代码、提交代码（当前的操作是在dev分支上进行）</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git add a.html</span><br><span class="line">git commit -m &quot;commit a.html&quot;</span><br></pre></td></tr></table></figure>
+<h6 id="3-分支合并-将dev合并到master"><a href="#3-分支合并-将dev合并到master" class="headerlink" title="3.分支合并(将dev合并到master)"></a>3.分支合并(将dev合并到master)</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git checkout master</span><br><span class="line">git merge dev</span><br></pre></td></tr></table></figure>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Git</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/03/02/t%E6%80%BB%E7%BB%93/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-it简单使用-2" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
